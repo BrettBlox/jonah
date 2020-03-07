@@ -1,0 +1,18 @@
+{
+  "extends": ["wesbos"],
+  "rules": {
+    //1 throws warning when clg left in code. 0 to remove warning, 2 to throw error instead
+    "no-console": 1,
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "semi": false,
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    ]
+  }
+}
