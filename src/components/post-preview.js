@@ -3,7 +3,14 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Preview = styled.article``
+import ReadLink from './read-link'
+
+const Preview = styled.article`
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.125rem;
+`
 
 const PostPreview = ({ post }) => (
   <Preview>
@@ -11,7 +18,7 @@ const PostPreview = ({ post }) => (
       <Link to={post.slug}>{post.title}</Link>
     </h3>
     <p>{post.excerpt}</p>
-    <Link to={post.slug}>read this post &rarr;</Link>
+    <ReadLink to={post.slug}>read this post &rarr;</ReadLink>
   </Preview>
 )
 

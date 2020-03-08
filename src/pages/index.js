@@ -15,8 +15,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title='Home' />
       <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby blog.</p>
-
+      <p>Welcome to Jonah's new Gatsby blog.</p>
       <h2>Read my blog</h2>
       {posts.map(post => (
         <PostPreview key={post.slug} post={post} />

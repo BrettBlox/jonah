@@ -12,7 +12,7 @@ module.exports = {
       options: {
         defaultLayout: {
           // posts: require.resolve('./src/components/PostsLayout.js'),
-          default: require.resolve('./src/components/Layout.js'),
+          default: require.resolve('./src/components/layout.js'),
         },
       },
     },
