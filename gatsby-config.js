@@ -8,10 +8,26 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayout: {
+          // posts: require.resolve('./src/components/PostsLayout.js'),
+          default: require.resolve('./src/components/Layout.js'),
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `posts`,
       },
     },
     `gatsby-transformer-sharp`,
