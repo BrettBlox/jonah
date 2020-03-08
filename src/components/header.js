@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { NavLink } from './navLink'
+import { NavLink } from './NavLink'
 
 const Header = ({ siteTitle }) => <header>{siteTitle}</header>
 
