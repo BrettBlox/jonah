@@ -19,14 +19,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
+      <div>
+        <main
+          css={`
+            padding: 2rem calc((100vw - 960px) / 2) 2rem;
+            width: 100%;
+          `}
+        >
+          {children}
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with 💚 by Brett Bloxom using
           {` `}

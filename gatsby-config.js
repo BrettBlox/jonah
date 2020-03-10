@@ -1,17 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Jonah`,
-    description: `Jonah's blog`,
+    title: `Jonah's Blog!`,
+    description: `Jo's personal website and blog.`,
     author: `Brett Bloxom`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayout: {
-          // posts: require.resolve('./src/components/PostsLayout.js'),
+          // blog: require.resolve('./src/components/blog-layout.js'),
           default: require.resolve('./src/components/layout.js'),
         },
       },
@@ -20,18 +22,16 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `posts`,
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `content/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
