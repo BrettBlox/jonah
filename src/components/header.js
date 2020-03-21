@@ -12,9 +12,18 @@ const Header = ({ siteTitle }) => (
       height: 5 rem;
       padding: 2rem calc((100vw - 1140px) / 2) 2rem;
       box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+
+      .header-icon {
+        font-size: 1.5rem;
+        svg {
+          margin-top: -15px;
+          margin-right: 1rem;
+          vertical-align: middle;
+        }
+      }
     `}
   >
-    <NavLink to='/'>
+    <NavLink to='/' className='header-icon'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='100 150 385 450'
@@ -31,7 +40,7 @@ const Header = ({ siteTitle }) => (
           className='fernpath'
         ></path>
       </svg>
-      {siteTitle}
+      <span>{siteTitle}</span>
     </NavLink>
     <NavLink>Writing</NavLink>
   </header>

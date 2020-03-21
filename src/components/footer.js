@@ -9,17 +9,13 @@ const Footer = ({ siteTitle }) => (
     css={`
       background: #141618;
       position: relative;
-      color: #fff;
       text-align: center;
       width: 100vw;
-      padding: 50px 8vw 30px;
+      padding: 3rem calc((100vw - 1140px) / 2) 2rem;
+      color: #b5b3b3;
 
       > * {
         margin-bottom: 30px;
-      }
-
-      svg {
-        color: linear-gradient(#fff, #b5b3b3);
       }
 
       hr {
@@ -39,14 +35,8 @@ const Footer = ({ siteTitle }) => (
         li {
           display: inline-block;
           padding-right: 15px;
-          color: #b5b3b3;
           font-size: 18px;
           margin: 0;
-
-          a {
-            color: inherit;
-            text-decoration: none;
-          }
         }
       }
     `}
@@ -81,11 +71,7 @@ const Footer = ({ siteTitle }) => (
       </li>
     </ul>
     <hr />
-    <div
-      css={`
-        color: #b5b3b3;
-      `}
-    >
+    <div>
       © {new Date().getFullYear()} Brett Bloxom - Built with 💚 using <a href='https://www.gatsbyjs.org'>Gatsby</a>
     </div>
   </footer>

@@ -6,6 +6,7 @@ const NavLink = styled(Link)`
   color: #030303;
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
 `
 
 export default NavLink
