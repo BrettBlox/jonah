@@ -21,6 +21,12 @@ const Header = ({ siteTitle }) => (
           vertical-align: middle;
         }
       }
+
+      nav {
+        a:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
     `}
   >
     <NavLink to='/' className='header-icon'>
@@ -42,7 +48,10 @@ const Header = ({ siteTitle }) => (
       </svg>
       <span>{siteTitle}</span>
     </NavLink>
-    <NavLink>Writing</NavLink>
+    <nav>
+      <NavLink to='/writing'>Writing</NavLink>
+      <NavLink to='/about'>About</NavLink>
+    </nav>
   </header>
 )
 
