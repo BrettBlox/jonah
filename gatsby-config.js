@@ -9,6 +9,8 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

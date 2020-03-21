@@ -20,7 +20,7 @@ const PostPreview = ({ post }) => (
     `}
   >
     <Link
-      to='post.slug'
+      to={post.slug}
       css={`
         margin: 1rem 1rem 0 0;
         margin-top: 0;

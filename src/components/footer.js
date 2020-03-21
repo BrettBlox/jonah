@@ -24,20 +24,27 @@ const Footer = ({ siteTitle }) => (
       }
 
       ul {
-        font-weight: 500;
+        font-weight: 700;
         padding-left: 0;
         list-style: none;
         text-transform: uppercase;
-        font-size: 20px;
         margin-top: 3px;
-        opacity: 0.8;
 
         li {
           display: inline-block;
-          padding-right: 15px;
-          font-size: 18px;
+          padding-right: 1rem;
+          font-size: 1.125rem;
           margin: 0;
+
+          a {
+            opacity: 0.8;
+          }
         }
+      }
+
+      .active {
+        opacity: 1;
+        color: #fff;
       }
     `}
   >
@@ -61,18 +68,24 @@ const Footer = ({ siteTitle }) => (
     </div>
     <ul>
       <li>
-        <Link to='/writing'>Writing</Link>
+        <Link activeClassName='active' to='/writing'>
+          Writing
+        </Link>
       </li>
       <li>
-        <Link to='/about'>About</Link>
+        <Link activeClassName='active' to='/about'>
+          About
+        </Link>
       </li>
       <li>
-        <Link to='/contact'>Get in Touch</Link>
+        <Link activeClassName='active' to='/contact'>
+          Get in Touch
+        </Link>
       </li>
     </ul>
     <hr />
     <div>
-      © {new Date().getFullYear()} Brett Bloxom - Built with 💚 using <a href='https://www.gatsbyjs.org'>Gatsby</a>
+      © {new Date().getFullYear()} Brett Bloxom - Built with 💜 using <a href='https://www.gatsbyjs.org'>Gatsby</a>
     </div>
   </footer>
 )
