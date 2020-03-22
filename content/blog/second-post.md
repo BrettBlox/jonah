@@ -1,9 +1,9 @@
 ---
 title: Second Post
 slug: second-post
-date: 2020-03-08
+date: 2020-03-08T00:00:00.000Z
 author: Jonah
-image: ../images/second.jpg
+image: /images/second.jpg
 ---
 
 I'm baby pBR&B ethical direct trade, chartreuse skateboard intelligentsia pitchfork taiyaki pok pok bicycle rights
