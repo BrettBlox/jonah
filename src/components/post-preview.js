@@ -27,15 +27,7 @@ const PostPreview = ({ post }) => (
         width: 300px;
       `}
     >
-      <Image
-        fluid={post.image.sharp.fluid}
-        css={`
-          * {
-            margin: 0;
-          }
-        `}
-        alt={post.title}
-      />
+      <Image fluid={post.image.sharp.fluid} alt={post.title} />
     </Link>
     <div>
       <h3>

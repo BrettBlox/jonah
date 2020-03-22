@@ -1,9 +1,12 @@
+import React from 'react'
 import { createGlobalStyle, css } from 'styled-components'
 
 import reset from './reset'
+import vars from './vars'
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
+  ${vars};
 
   a {
     color: inherit;
@@ -16,4 +19,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export default GlobalStyle
+// eslint-disable-next-line react/display-name
+export default () => (
+  <>
+    <GlobalStyle />
+  </>
+)

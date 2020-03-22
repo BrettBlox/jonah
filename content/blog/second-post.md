@@ -1,6 +1,5 @@
 ---
 title: Second Post
-slug: second-post
 date: 2020-03-08T00:00:00.000Z
 author: Jonah
 image: /images/second.jpg

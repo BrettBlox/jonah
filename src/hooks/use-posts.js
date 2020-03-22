@@ -3,11 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby'
 const usePosts = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx {
+      allMarkdownRemark {
         nodes {
+          fields {
+            slug
+          }
           frontmatter {
             title
-            slug
             author
             date(formatString: "MMMM DD, YYYY")
             image {
@@ -24,9 +26,9 @@ const usePosts = () => {
     }
   `)
 
-  return data.allMdx.nodes.map(post => ({
+  return data.allMarkdownRemark.nodes.map(post => ({
     title: post.frontmatter.title,
-    slug: post.frontmatter.slug,
+    slug: post.fields.slug,
     author: post.frontmatter.author,
     date: post.frontmatter.date,
     image: post.frontmatter.image,

@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
+media_folder_relative: true
 media_folder: content/images
 public_folder: /images
 
@@ -12,11 +13,10 @@ collections:
     create: true
     slug: '{{slug}}'
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Path', name: 'slug', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Post Body', name: 'body', widget: 'markdown' }

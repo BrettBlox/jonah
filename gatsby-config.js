@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jonah's Blog!`,
+    title: `The Humdrum Dandelion`,
     description: `Jo's personal website and blog.`,
     author: `Brett Bloxom`,
   },
@@ -9,16 +9,28 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-remark`,
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: ['.mdx', '.md'],
+    //     defaultLayout: {
+    //       // blog: require.resolve('./src/components/blog-layout.js'),
+    //       default: require.resolve('./src/components/layout.js'),
+    //     },
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        extensions: ['.mdx', '.md'],
-        defaultLayout: {
-          // blog: require.resolve('./src/components/blog-layout.js'),
-          default: require.resolve('./src/components/layout.js'),
-        },
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {},
+          },
+        ],
       },
     },
     {
@@ -47,8 +59,6 @@ module.exports = {
         icon: `content/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
