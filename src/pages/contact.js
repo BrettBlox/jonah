@@ -7,8 +7,6 @@ import SEO from '../components/seo'
 
 
 const ContactPage = () => {
-  const posts = usePosts()
-
   return (
     <Layout>
       <SEO title='Contact' />
