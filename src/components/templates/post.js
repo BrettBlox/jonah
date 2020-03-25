@@ -6,7 +6,6 @@ import ReadLink from '../read-link'
 
 const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
   const { next, prev } = pageContext
-  console.log(next, prev)
   return (
     <Layout>
       <h1>{post.frontmatter.title}</h1>

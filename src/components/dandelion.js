@@ -9,7 +9,7 @@ const Dandelion = ({ title, style, fill, viewBox, width, className, height }) =>
     className={className}
     viewBox={viewBox}
     title={title}
-    fill='url(#dandelionGradient)'
+    fill={fill || 'url(#dandelionGradient)'}
     aria-labelledby='dandelionTitle'
     role='img'
   >
@@ -39,7 +39,7 @@ Dandelion.propTypes = {
 Dandelion.defaultProps = {
   title: 'Dandelion',
   style: {},
-  fill: '#000',
+  fill: '',
   viewBox: '0 0 957 1280',
   width: '100',
   className: '',

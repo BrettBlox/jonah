@@ -52,7 +52,7 @@ const Footer = ({ siteTitle }) => (
   >
     <div>
       <Link to='/'>
-        <Dandelion fill='#b5b3b3' />
+        <Dandelion />
       </Link>
     </div>
     <ul>
@@ -73,8 +73,17 @@ const Footer = ({ siteTitle }) => (
       </li>
     </ul>
     <hr />
-    <div>
-      © {new Date().getFullYear()} Brett Bloxom - Built with 💜 using <a href='https://www.gatsbyjs.org'>Gatsby</a>
+    <div className='footer-copyright'>
+      All Materials © Jonah Swann {new Date().getFullYear()} <br />
+      Built with{' '}
+      <Dandelion
+        width='30'
+        height='30'
+        css={`
+          margin-bottom: -0.5rem;
+        `}
+      />{' '}
+      by Brett Bloxom
     </div>
   </footer>
 )
