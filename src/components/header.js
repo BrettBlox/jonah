@@ -32,6 +32,7 @@ const Header = ({ siteTitle }) => (
   >
     <NavLink to='/' className='header-icon'>
       <Dandelion
+        id='header-dandelion'
         css={`
           margin-left: -1rem;
         `}
@@ -39,12 +40,8 @@ const Header = ({ siteTitle }) => (
       <span>{siteTitle}</span>
     </NavLink>
     <nav>
-      <NavLink activeClassName='active' to='/writing'>
-        Writing
-      </NavLink>
-      <NavLink activeClassName='active' to='/about'>
-        About
-      </NavLink>
+      <NavLink to='/writing'>Writing</NavLink>
+      <NavLink to='/about'>About</NavLink>
     </nav>
   </header>
 )

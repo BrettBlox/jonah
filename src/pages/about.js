@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 
 const AboutPage = () => (
   <Layout>
-    <SEO title='About Jo' />
+    <SEO title='About Jo' lang='en' />
     <h1>About Jonah</h1>
     <p>
       Tacos iceland stumptown meggings, chambray master cleanse cold-pressed. Messenger bag lumbersexual man bun

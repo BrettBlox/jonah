@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Dandelion = ({ title, style, fill, viewBox, width, className, height }) => (
+const Dandelion = ({ title, fill, viewBox, width, className, height, id }) => (
   <svg
     width={width}
-    style={style}
     height={height}
     className={className}
     viewBox={viewBox}
     title={title}
-    fill={fill || 'url(#dandelionGradient)'}
-    aria-labelledby='dandelionTitle'
+    fill={fill || `url(#${id})`}
+    aria-labelledby={title}
     role='img'
+    css='vertical-align: middle'
   >
-    <title id='dandelionTitle'>{title}</title>
+    <title id={title}>{title}</title>
     <defs>
-      <linearGradient id='dandelionGradient' x2='0' y2='1'>
+      <linearGradient id={id} x2='0' y2='1'>
         <stop offset='0%' stopColor='#f0e130' />
         <stop offset='70%' stopColor='#526b2d' />
         <stop offset='100%' stopColor='#526b2d' />
@@ -27,8 +27,8 @@ const Dandelion = ({ title, style, fill, viewBox, width, className, height }) =>
 )
 
 Dandelion.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
-  style: PropTypes.object,
   fill: PropTypes.string,
   viewBox: PropTypes.string,
   width: PropTypes.string,
@@ -37,8 +37,8 @@ Dandelion.propTypes = {
 }
 
 Dandelion.defaultProps = {
+  id: '',
   title: 'Dandelion',
-  style: {},
   fill: '',
   viewBox: '0 0 957 1280',
   width: '100',

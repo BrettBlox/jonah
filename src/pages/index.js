@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title='Home' />
+      <SEO title='Home' lang='en' />
       <h1>Hi Jonah!!!</h1>
       <p>I love you so much and cant wait for you to be able to use this thing.</p>
       <p>Im not sure what you will end up wanting on this homepage. Maybe a handful of posts and some other stuff?</p>

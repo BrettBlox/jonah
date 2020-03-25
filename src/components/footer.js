@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
-import { NavLink } from './nav-link'
+import NavLink from './nav-link'
 
 import Dandelion from './dandelion'
 
@@ -43,47 +43,38 @@ const Footer = ({ siteTitle }) => (
           }
         }
       }
-
       .active {
-        opacity: 1;
         color: #fff;
+        opacity: 1;
       }
     `}
   >
     <div>
-      <Link to='/'>
-        <Dandelion />
-      </Link>
+      <NavLink color='#b5b3b3' to='/'>
+        <Dandelion id='footer-dandelion' title='Footer Dandelion Logo' />
+      </NavLink>
     </div>
     <ul>
       <li>
-        <Link activeClassName='active' to='/writing'>
+        <NavLink color='#b5b3b3' activeClassName='active' to='/writing'>
           Writing
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link activeClassName='active' to='/about'>
+        <NavLink color='#b5b3b3' activeClassName='active' to='/about'>
           About
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link activeClassName='active' to='/contact'>
+        <NavLink color='#b5b3b3' activeClassName='active' to='/contact'>
           Get in Touch
-        </Link>
+        </NavLink>
       </li>
     </ul>
     <hr />
-    <div className='footer-copyright'>
+    <div>
       All Materials © Jonah Swann {new Date().getFullYear()} <br />
-      Built with{' '}
-      <Dandelion
-        width='30'
-        height='30'
-        css={`
-          margin-bottom: -0.5rem;
-        `}
-      />{' '}
-      by Brett Bloxom
+      Built with <Dandelion id='copyright' title='Copyright Dandelion Logo' width='30' height='35' /> by Brett Bloxom
     </div>
   </footer>
 )

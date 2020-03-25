@@ -13,7 +13,7 @@ const WritingPage = () => {
 
   return (
     <Layout>
-      <SEO title='Writing' />
+      <SEO title='Writing' lang='en' />
       <h1>Writing Page</h1>
       <p>
         This Page will list all of your posts and have an archive. Possibly some way of categorizing posts through tags
