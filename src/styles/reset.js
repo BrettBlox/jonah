@@ -335,50 +335,18 @@ const reset = css`
     padding-top: 0;
     margin-bottom: 1.45rem;
   }
-  ul {
-    margin-left: 1.45rem;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
-    list-style-position: outside;
-    list-style-image: none;
-  }
+  ul,
   ol {
-    margin-left: 1.45rem;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
-    list-style-position: outside;
-    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-  dl {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
-  }
+  dl,
   dd {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin: 0;
+    padding: 0;
   }
+
   p {
     margin-left: 0;
     margin-right: 0;
@@ -512,7 +480,7 @@ const reset = css`
     font-weight: bold;
   }
   li {
-    margin-bottom: calc(1.45rem / 2);
+    margin: 0;
   }
   ol li {
     padding-left: 0;

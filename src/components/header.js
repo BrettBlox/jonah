@@ -8,50 +8,61 @@ import Dandelion from './dandelion'
 const Header = ({ siteTitle }) => (
   <header
     css={`
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: 1rem calc((100vw - var(--header-width)) / 2) 1rem;
       width: 100%;
       box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 
-      div {
+      nav {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
-        width: 100%;
-        margin: 0 3vw;
+        width: var(--max-width);
+        max-width: 90vw;
+        margin: 0 auto;
       }
 
       .header-icon {
         display: flex;
         align-items: center;
-        font-size: calc(14px + (1.5rem - 14) * ((100vw - 300px) / (1400 - 300)));
+        justify-content: center;
+        font-size: 1.5rem;
+        text-align: center;
 
         svg {
           margin-right: 0.5rem;
+          margin-left: -1rem;
           vertical-align: middle;
           justify-self: flex-start;
         }
       }
 
-      nav {
-        a:not(:last-child) {
+      ul {
+        display: flex;
+        align-items: center;
+        li:not(:last-child) {
           margin-right: 1rem;
         }
       }
+
+      @media screen and (max-width: 500px) {
+      }
     `}
   >
-    <div>
+    <nav>
       <NavLink to='/' className='header-icon'>
         <Dandelion id='header-dandelion' />
         <span>{siteTitle}</span>
       </NavLink>
-      <nav>
-        <NavLink to='/writing'>Writing</NavLink>
-        <NavLink to='/about'>About</NavLink>
-      </nav>
-    </div>
+      <ul>
+        <li>
+          <NavLink to='/writing'>Writing</NavLink>
+        </li>
+        <li>
+          <NavLink to='/about'>About</NavLink>
+        </li>
+      </ul>
+    </nav>
   </header>
 )
 
