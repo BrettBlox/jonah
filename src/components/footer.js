@@ -13,16 +13,19 @@ const Footer = ({ siteTitle }) => (
       position: relative;
       text-align: center;
       width: 100vw;
-      padding: 3rem calc((100vw - 1140px) / 2) 2rem;
+      padding: 1rem calc((100vw - var(--header-width)) / 2) 1rem;
       color: var(--beige);
 
       > * {
-        margin-bottom: 30px;
+        margin-bottom: 2rem;
       }
 
       hr {
         opacity: 0.1;
         background-color: #fff;
+        max-width: 96vw;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       ul {

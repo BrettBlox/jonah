@@ -8,6 +8,9 @@ const vars = css`
     --beige: #b5b3b3;
     --yellow-rgba: rgba(240, 225, 48, 1);
     --green-rgba: rgba(82, 107, 45, 1);
+    --main-max-width: 1140px;
+    --header-width: calc(1140px + 2rem);
+    --footer-width: var(--header-width);
   }
 `
 

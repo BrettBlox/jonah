@@ -30,10 +30,9 @@ const AboutPage = () => {
         <Image
           css={`
             width: 400px;
+            max-width: 70vw;
             border-radius: 50%;
             margin: 0 auto;
-            border: 2px solid rgba(240, 225, 48, 0.5);
-            box-shadow: 0 0 1rem 2px var(--green);
           `}
           fluid={data.file.sharp.fluid}
         />

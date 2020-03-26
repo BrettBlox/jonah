@@ -11,15 +11,27 @@ const Header = ({ siteTitle }) => (
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 5 rem;
-      padding: 1rem calc((100vw - 1140px) / 2) 1rem;
+      padding: 1rem calc((100vw - var(--header-width)) / 2) 1rem;
+      width: 100%;
       box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 3vw;
+      }
+
       .header-icon {
-        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        font-size: calc(14px + (1.5rem - 14) * ((100vw - 300px) / (1400 - 300)));
+
         svg {
-          margin-right: 1rem;
+          margin-right: 0.5rem;
           vertical-align: middle;
+          justify-self: flex-start;
         }
       }
 
@@ -30,19 +42,16 @@ const Header = ({ siteTitle }) => (
       }
     `}
   >
-    <NavLink to='/' className='header-icon'>
-      <Dandelion
-        id='header-dandelion'
-        css={`
-          margin-left: -1rem;
-        `}
-      />
-      <span>{siteTitle}</span>
-    </NavLink>
-    <nav>
-      <NavLink to='/writing'>Writing</NavLink>
-      <NavLink to='/about'>About</NavLink>
-    </nav>
+    <div>
+      <NavLink to='/' className='header-icon'>
+        <Dandelion id='header-dandelion' />
+        <span>{siteTitle}</span>
+      </NavLink>
+      <nav>
+        <NavLink to='/writing'>Writing</NavLink>
+        <NavLink to='/about'>About</NavLink>
+      </nav>
+    </div>
   </header>
 )
 

@@ -624,6 +624,15 @@ const reset = css`
     }
   }
 
+  /* 
+  * Fluid typography
+  * 14px is the minimum size at the smallest viewport width of 300px and where 
+  * 18px is the maximum size at the largest viewport width of 1600px
+  */
+  body {
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
   /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;

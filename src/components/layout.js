@@ -26,8 +26,9 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main
         css={`
-          padding: 2rem calc((100vw - 1140px) / 2) 2rem;
-          width: 100%;
+          width: var(--main-max-width);
+          max-width: 90vw;
+          margin: 2rem auto 4rem;
         `}
       >
         {children}
