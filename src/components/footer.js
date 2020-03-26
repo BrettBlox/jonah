@@ -14,7 +14,7 @@ const Footer = ({ siteTitle }) => (
       text-align: center;
       width: 100vw;
       padding: 3rem calc((100vw - 1140px) / 2) 2rem;
-      color: #b5b3b3;
+      color: var(--beige);
 
       > * {
         margin-bottom: 30px;
@@ -50,23 +50,23 @@ const Footer = ({ siteTitle }) => (
     `}
   >
     <div>
-      <NavLink color='#b5b3b3' to='/'>
+      <NavLink to='/'>
         <Dandelion id='footer-dandelion' title='Footer Dandelion Logo' />
       </NavLink>
     </div>
     <ul>
       <li>
-        <NavLink color='#b5b3b3' activeClassName='active' to='/writing'>
+        <NavLink color='var(--beige)' activeClassName='active' to='/writing'>
           Writing
         </NavLink>
       </li>
       <li>
-        <NavLink color='#b5b3b3' activeClassName='active' to='/about'>
+        <NavLink color='var(--beige)' activeClassName='active' to='/about'>
           About
         </NavLink>
       </li>
       <li>
-        <NavLink color='#b5b3b3' activeClassName='active' to='/contact'>
+        <NavLink color='var(--beige)' activeClassName='active' to='/contact'>
           Get in Touch
         </NavLink>
       </li>
