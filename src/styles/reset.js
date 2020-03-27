@@ -598,7 +598,12 @@ const reset = css`
   * 18px is the maximum size at the largest viewport width of 1600px
   */
   body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+      Helvetica Neue, sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 1.58;
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: #333;
   }
 
   /* A elements that don't have a class get default styles */

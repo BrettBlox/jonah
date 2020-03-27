@@ -20,7 +20,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div
+      css={`
+        position: relative;
+      `}
+    >
       <SEO />
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -28,13 +32,13 @@ const Layout = ({ children }) => {
         css={`
           width: var(--max-width);
           max-width: 90vw;
-          margin: 2rem auto 4rem;
+          margin: 200px auto 4rem;
         `}
       >
         {children}
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
