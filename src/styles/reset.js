@@ -600,7 +600,7 @@ const reset = css`
   body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
       Helvetica Neue, sans-serif;
-    letter-spacing: -0.03em;
+    letter-spacing: 0.08em;
     line-height: 1.58;
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: #333;

@@ -28,17 +28,17 @@ const Footer = ({ siteTitle }) => (
       }
 
       ul {
-        font-weight: 700;
-        padding-left: 0;
+        padding: 0;
         list-style: none;
         text-transform: uppercase;
         margin-top: 3px;
 
         li {
           display: inline-block;
-          padding-right: 1rem;
-          font-size: 1.125rem;
           margin: 0;
+          &:not(:last-child) {
+            padding-right: 1rem;
+          }
 
           a {
             opacity: 0.8;
@@ -48,6 +48,7 @@ const Footer = ({ siteTitle }) => (
       .active {
         color: #fff;
         opacity: 1;
+        font-weight: 700;
       }
     `}
   >
@@ -58,17 +59,17 @@ const Footer = ({ siteTitle }) => (
     </div>
     <ul>
       <li>
-        <NavLink color='var(--beige)' activeClassName='active' to='/writing'>
+        <NavLink fontWeight='400' color='var(--beige)' activeClassName='active' to='/writing'>
           Writing
         </NavLink>
       </li>
       <li>
-        <NavLink color='var(--beige)' activeClassName='active' to='/about'>
+        <NavLink fontWeight='400' color='var(--beige)' activeClassName='active' to='/about'>
           About
         </NavLink>
       </li>
       <li>
-        <NavLink color='var(--beige)' activeClassName='active' to='/contact'>
+        <NavLink fontWeight='400' color='var(--beige)' activeClassName='active' to='/contact'>
           Get in Touch
         </NavLink>
       </li>

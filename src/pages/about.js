@@ -21,22 +21,15 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title='About Jo' lang='en' />
-      <div
+      <Image
         css={`
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+          width: 400px;
+          max-width: 70vw;
+          border-radius: 50%;
+          margin: 0 auto 2rem;
         `}
-      >
-        <Image
-          css={`
-            width: 400px;
-            max-width: 70vw;
-            border-radius: 50%;
-            margin: 0 auto;
-          `}
-          fluid={data.file.sharp.fluid}
-        />
-      </div>
+        fluid={data.file.sharp.fluid}
+      />
       <h1>About Jonah</h1>
       <p>
         Tacos iceland stumptown meggings, chambray master cleanse cold-pressed. Messenger bag lumbersexual man bun

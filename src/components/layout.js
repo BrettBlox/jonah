@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
           css={`
             width: var(--max-width);
             max-width: 90vw;
-            margin: 200px auto 4rem;
+            margin: 11rem auto 4rem;
             flex-grow: 1;
           `}
         >
