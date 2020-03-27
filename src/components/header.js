@@ -19,25 +19,20 @@ const Header = ({ siteTitle }) => (
 
       nav {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
         justify-content: space-between;
         width: var(--max-width);
         max-width: 90vw;
         margin: 0 auto;
-        z-index: 11;
       }
 
       .header-icon {
         display: flex;
         align-items: center;
-        justify-content: center;
 
         svg {
           margin-right: 0.5rem;
           margin-left: -1rem;
           vertical-align: middle;
-          justify-self: flex-start;
         }
       }
 
