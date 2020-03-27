@@ -9,11 +9,10 @@ import Dandelion from './dandelion'
 const Footer = ({ siteTitle }) => (
   <footer
     css={`
-      background: #141618;
-      position: relative;
+      background: var(--dark-grey);
       text-align: center;
       width: 100vw;
-      padding: 1rem calc((100vw - var(--header-width)) / 2) 1rem;
+      padding: 3rem calc((100vw - var(--header-width)) / 2) 1rem;
       color: var(--beige);
 
       > * {

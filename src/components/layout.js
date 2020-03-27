@@ -20,25 +20,31 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div
-      css={`
-        position: relative;
-      `}
-    >
+    <>
       <SEO />
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main
+      <div
         css={`
-          width: var(--max-width);
-          max-width: 90vw;
-          margin: 200px auto 4rem;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
         `}
       >
-        {children}
-      </main>
-      <Footer />
-    </div>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main
+          css={`
+            width: var(--max-width);
+            max-width: 90vw;
+            margin: 200px auto 4rem;
+            flex-grow: 1;
+          `}
+        >
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 
