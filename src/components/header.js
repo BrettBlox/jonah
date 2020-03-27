@@ -14,9 +14,8 @@ const Header = ({ siteTitle }) => (
       letter-spacing: 0.08em;
       position: fixed;
       top: 0;
-      opacity: 0.9;
+      background: rgba(255, 255, 255, 0.9);
       z-index: 10;
-      background: #fff;
 
       nav {
         display: flex;
@@ -26,15 +25,13 @@ const Header = ({ siteTitle }) => (
         width: var(--max-width);
         max-width: 90vw;
         margin: 0 auto;
+        z-index: 11;
       }
 
       .header-icon {
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        font-size: calc(14px + (24 - 14) * ((100vw - 400px) / (1600 - 400)));
-        font-weight: bold;
 
         svg {
           margin-right: 0.5rem;
@@ -47,14 +44,13 @@ const Header = ({ siteTitle }) => (
       ul {
         display: flex;
         align-items: center;
-        font-size: calc(14px + (18 - 14) * ((100vw - 400px) / (1600 - 400)));
 
         li:not(:last-child) {
           margin-right: 1rem;
         }
       }
 
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 600px) {
         .header-icon {
           > span {
             display: none;
@@ -64,7 +60,7 @@ const Header = ({ siteTitle }) => (
     `}
   >
     <nav>
-      <NavLink to='/' className='header-icon'>
+      <NavLink to='/' className='header-icon' fontWeight='700'>
         <Dandelion id='header-dandelion' />
         <span>{siteTitle}</span>
       </NavLink>
