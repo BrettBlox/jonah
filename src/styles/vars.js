@@ -20,9 +20,6 @@ const vars = css`
     --yellow-rgba: rgba(240, 225, 48, 1);
     --green-rgba: rgba(82, 107, 45, 1);
     --beige: #b5b3b3;
-    /* --dark: #0e1e25;
-    --mid: rgba(14, 30, 37, 0.8);
-    --light: rgba(14, 30, 37, 0.54); */
 
     --max-width: 1140px;
     --header-width: calc(1140px + 2rem);

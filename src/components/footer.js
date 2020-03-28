@@ -19,7 +19,7 @@ const StyledFooter = styled.footer`
 
   hr {
     opacity: 0.3;
-    background-color: #fff;
+    background-color: var(--white);
     max-width: 96vw;
     margin-left: auto;
     margin-right: auto;

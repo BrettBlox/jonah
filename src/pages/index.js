@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -6,6 +7,10 @@ import PostPreview from '../components/post-preview'
 import PostsGrid from '../components/posts-grid'
 
 import usePosts from '../hooks/use-posts'
+
+const RecentPosts = styled.section`
+  padding: 4rem 0;
+`
 
 const IndexPage = () => {
   const posts = usePosts()
@@ -27,7 +32,7 @@ const IndexPage = () => {
           to share that brilliance with me and the rest of the world. I'm so excited to hear your words.
         </p>
       </section>
-      <section>
+      <RecentPosts>
         <h2
           css={`
             text-align: center;
@@ -40,7 +45,7 @@ const IndexPage = () => {
             <PostPreview direction='column' key={post.slug} post={post} />
           ))}
         </PostsGrid>
-      </section>
+      </RecentPosts>
     </Layout>
   )
 }
