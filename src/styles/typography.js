@@ -11,8 +11,8 @@ const typography = css`
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
-    color: #333;
-    letter-spacing: 0.08em;
+    color: var(--dark-grey);
+    /* letter-spacing: 0.05em; */
     line-height: 1.58;
   }
 
@@ -27,11 +27,20 @@ const typography = css`
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
+    letter-spacing: 0.08em;
   }
 
   h1 {
     --fluid-type-min-size: 1.62671;
     --fluid-type-max-size: 2.25;
+    &::after {
+      content: '';
+      height: 1px;
+      background-color: var(--beige);
+      width: 100%;
+      display: block;
+      margin: 0.5em 0 1em;
+    }
   }
 
   h2 {

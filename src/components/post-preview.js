@@ -6,19 +6,19 @@ import Image from 'gatsby-image'
 
 import ReadLink from './read-link'
 
-const PostPreview = ({ post }) => (
-  <article
-    css={`
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      margin-top: 1rem;
-      border-radius: 0.125rem;
-      display: flex;
+const StyledArticle = styled.article`
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-top: 1rem;
+  border-radius: 0.125rem;
+  display: flex;
 
-      :first-of-type {
-        margin-top: 2rem;
-      }
-    `}
-  >
+  :first-of-type {
+    margin-top: 2rem;
+  }
+`
+
+const PostPreview = ({ post }) => (
+  <StyledArticle>
     <Link
       to={post.slug}
       css={`
@@ -36,7 +36,7 @@ const PostPreview = ({ post }) => (
       <p>{post.excerpt}</p>
       <ReadLink to={post.slug}>read this post &rarr;</ReadLink>
     </div>
-  </article>
+  </StyledArticle>
 )
 
 PostPreview.propTypes = {
