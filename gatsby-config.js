@@ -47,6 +47,18 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `The Humdrum Dandelion`,
+        short_name: `Humdrum Dandelion`,
+        start_url: `/`,
+        background_color: ``,
+        theme_color: ``,
+        display: `standalone`,
+        icon: `content/images/dandelion.svg`,
+      },
+    },
     `gatsby-plugin-netlify-cms`,
   ],
 }
