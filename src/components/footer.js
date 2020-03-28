@@ -6,7 +6,7 @@ import NavLink from './nav-link'
 import Dandelion from './dandelion'
 
 const StyledFooter = styled.footer`
-  background: var(--dark);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), linear-gradient(90deg, var(--green), var(--dark));
   text-align: center;
   width: 100vw;
   padding: 3rem calc((100vw - var(--header-width)) / 2) 1rem;
