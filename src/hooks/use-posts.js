@@ -14,7 +14,7 @@ const usePosts = () => {
             date(formatString: "MMMM DD, YYYY")
             image {
               sharp: childImageSharp {
-                fluid(maxWidth: 300, maxHeight: 300) {
+                fluid(maxWidth: 600, maxHeight: 600) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

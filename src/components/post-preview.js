@@ -7,18 +7,22 @@ import BackgroundImage from 'gatsby-background-image'
 import ReadLink from './read-link'
 
 const StyledArticle = styled.article`
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   margin-top: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: ${props => props.direction && props.direction};
   border-radius: 0.5em;
-  box-shadow: 5px 5px 25px rgba(118, 118, 118, 0.15);
-  margin-bottom: 1.618em;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  background-color: #fff;
   overflow: auto;
   text-align: left;
+  transition: all 0.15s ease-out;
+  height: 100%;
 
-  :first-of-type {
-    margin-top: 2rem;
+  :hover {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    transform: translateY(-3px) scale(1.01);
   }
 
   div {
@@ -33,12 +37,11 @@ const StyledArticle = styled.article`
   }
 `
 
-const PostPreview = ({ post }) => (
-  <StyledArticle>
+const PostPreview = ({ post, direction }) => (
+  <StyledArticle direction={direction}>
     <Link
       to={post.slug}
       css={`
-        margin: 1rem 1rem 0 0;
         margin-top: 0;
       `}
     >
@@ -49,7 +52,7 @@ const PostPreview = ({ post }) => (
           display: flex;
           justify-content: center;
           height: 100%;
-          min-height: 8em;
+          min-height: 12em;
           min-width: 13em;
           position: relative;
         `}
@@ -69,6 +72,7 @@ const PostPreview = ({ post }) => (
 
 PostPreview.propTypes = {
   post: PropTypes.object.isRequired,
+  direction: PropTypes.string,
 }
 
 export default PostPreview

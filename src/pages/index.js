@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-// import Image from '../components/image'
 import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
 
@@ -28,10 +26,26 @@ const IndexPage = () => {
           to share that brilliance with me and the rest of the world. I'm so excited to hear your words.
         </p>
       </section>
-      <h2>Here's some fake blog posts</h2>
-      {posts.map(post => (
-        <PostPreview key={post.slug} post={post} />
-      ))}
+      <section>
+        <h2
+          css={`
+            text-align: center;
+          `}
+        >
+          Recent Blog Posts
+        </h2>
+        <div
+          css={`
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 2rem;
+          `}
+        >
+          {posts.map(post => (
+            <PostPreview direction='column' key={post.slug} post={post} />
+          ))}
+        </div>
+      </section>
     </Layout>
   )
 }

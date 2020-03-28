@@ -38,6 +38,10 @@ const Layout = ({ children }) => {
             max-width: 90vw;
             margin: 11rem auto 4rem;
             flex-grow: 1;
+
+            > * + * {
+              margin-top: 4em;
+            }
           `}
         >
           {children}

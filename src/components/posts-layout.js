@@ -1,16 +1,59 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Layout from './layout'
+import Header from './header'
+import Footer from './footer'
 
-const PostsLayout = ({ children }) => (
-  <Layout>
-    <main>{children}</main>
-  </Layout>
-)
+import GlobalStyle from '../styles/global'
+import SEO from './seo'
 
-PostsLayout.propTypes = {
+const PostLayout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query PostsSiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    <>
+      <SEO />
+      <GlobalStyle />
+      <div
+        css={`
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        `}
+      >
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main
+          css={`
+            width: var(--max-width);
+            max-width: 90vw;
+            margin: 11rem auto 4rem;
+            flex-grow: 1;
+
+            > * + * {
+              margin-top: 4em;
+            }
+          `}
+        >
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+PostLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default PostsLayout
+export default PostLayout

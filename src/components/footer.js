@@ -6,11 +6,12 @@ import NavLink from './nav-link'
 import Dandelion from './dandelion'
 
 const StyledFooter = styled.footer`
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), linear-gradient(90deg, var(--green), var(--dark));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),
+    linear-gradient(90deg, var(--green), var(--grey-800));
   text-align: center;
   width: 100vw;
   padding: 3rem calc((100vw - var(--header-width)) / 2) 1rem;
-  color: var(--beige);
+  color: var(--grey-500);
 
   > * {
     margin-bottom: 2rem;
@@ -43,7 +44,7 @@ const StyledFooter = styled.footer`
     }
   }
   .active {
-    color: #fff;
+    color: var(--white);
     opacity: 1;
     font-weight: 700;
   }
@@ -58,17 +59,17 @@ const Footer = ({ siteTitle }) => (
     </div>
     <ul>
       <li>
-        <NavLink fontWeight='400' color='var(--beige)' activeClassName='active' to='/writing'>
+        <NavLink fontWeight='400' color='var(--grey-500)' activeClassName='active' to='/writing'>
           Writing
         </NavLink>
       </li>
       <li>
-        <NavLink fontWeight='400' color='var(--beige)' activeClassName='active' to='/about'>
+        <NavLink fontWeight='400' color='var(--grey-500)' activeClassName='active' to='/about'>
           About
         </NavLink>
       </li>
       <li>
-        <NavLink fontWeight='400' color='var(--beige)' activeClassName='active' to='/contact'>
+        <NavLink fontWeight='400' color='var(--grey-500)' activeClassName='active' to='/contact'>
           Get in Touch
         </NavLink>
       </li>

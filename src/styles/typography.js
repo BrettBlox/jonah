@@ -11,7 +11,7 @@ const typography = css`
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
-    color: var(--mid);
+    color: var(--grey-700);
     line-height: 1.58;
   }
 
@@ -21,7 +21,7 @@ const typography = css`
   h4,
   h5,
   h6 {
-    color: var(--dark);
+    color: var(--grey-900);
     text-transform: uppercase;
     font-size: calc(
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *

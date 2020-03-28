@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
   ${vars};
   ${typography};
 
+  body {
+    background-color: var(--grey-100);
+  }
+
   a {
     color: inherit;
     font-weight: bold;
