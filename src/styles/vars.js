@@ -6,7 +6,9 @@ const vars = css`
     --green: #526b2d;
     --yellow: #f0e130;
     --beige: #b5b3b3;
-    --dark-grey: #141618;
+    --dark: #0e1e25;
+    --mid: rgba(14, 30, 37, 0.8);
+    --light: rgba(14, 30, 37, 0.54);
     --yellow-rgba: rgba(240, 225, 48, 1);
     --green-rgba: rgba(82, 107, 45, 1);
     --max-width: 1140px;

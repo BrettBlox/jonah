@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const NavLink = styled(Link)`
-  color: ${props => (props.color ? props.color : '#333')};
+  color: ${props => (props.color ? props.color : 'var(--dark)')};
   text-decoration: none;
   font-weight: ${props => (props.fontWeight ? props.fontWeight : 300)};
   text-transform: uppercase;
