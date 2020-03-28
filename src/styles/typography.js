@@ -33,6 +33,8 @@ const typography = css`
   h1 {
     --fluid-type-min-size: 1.62671;
     --fluid-type-max-size: 2.25;
+
+    /* I should move this where it is needed */
     &::after {
       content: '';
       height: 1px;
