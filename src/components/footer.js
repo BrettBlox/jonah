@@ -17,7 +17,7 @@ const StyledFooter = styled.footer`
   }
 
   hr {
-    opacity: 0.1;
+    opacity: 0.3;
     background-color: #fff;
     max-width: 96vw;
     margin-left: auto;
