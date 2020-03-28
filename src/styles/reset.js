@@ -188,7 +188,6 @@ const reset = css`
     font: inherit;
   }
   html {
-    font: 112.5%/1.45em georgia, serif;
     box-sizing: border-box;
     overflow-y: scroll;
   }
@@ -237,7 +236,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 2.25rem;
     line-height: 1.1;
   }
   h2 {
@@ -254,7 +252,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.62671rem;
     line-height: 1.1;
   }
   h3 {
@@ -271,7 +268,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.38316rem;
     line-height: 1.1;
   }
   h4 {
@@ -288,7 +284,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1rem;
     line-height: 1.1;
   }
   h5 {
@@ -305,7 +300,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 0.85028rem;
     line-height: 1.1;
   }
   h6 {
@@ -322,8 +316,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 0.78405rem;
-    line-height: 1.1;
   }
   hgroup {
     margin-left: 0;
@@ -590,20 +582,6 @@ const reset = css`
     html {
       font-size: 100%;
     }
-  }
-
-  /* 
-  * Fluid typography
-  * 14px is the minimum size at the smallest viewport width of 300px and where 
-  * 18px is the maximum size at the largest viewport width of 1600px
-  */
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    letter-spacing: 0.08em;
-    line-height: 1.58;
-    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
-    color: #333;
   }
 
   /* A elements that don't have a class get default styles */
