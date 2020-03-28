@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image'
 
 import ReadLink from './read-link'
 
-const StyledArticle = styled.article`
+const Article = styled.article`
   margin-top: 1rem;
   display: flex;
   flex-direction: ${props => props.direction && props.direction};
@@ -29,7 +29,7 @@ const StyledArticle = styled.article`
     padding: 1.15em 1.85em;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     > a {
       width: 100%;
@@ -37,28 +37,20 @@ const StyledArticle = styled.article`
   }
 `
 
+const PostImage = styled(BackgroundImage)`
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 14em;
+  min-width: 26em;
+`
+
 const PostPreview = ({ post, direction }) => (
-  <StyledArticle direction={direction}>
-    <Link
-      to={post.slug}
-      css={`
-        margin-top: 0;
-      `}
-    >
-      <BackgroundImage
-        css={`
-          background-position: 50% 50%;
-          background-size: cover;
-          display: flex;
-          justify-content: center;
-          height: 100%;
-          min-height: 12em;
-          min-width: 13em;
-          position: relative;
-        `}
-        fluid={post.image.sharp.fluid}
-        alt={post.title}
-      />
+  <Article direction={direction}>
+    <Link to={post.slug}>
+      <PostImage fluid={post.image.sharp.fluid} alt={post.title} />
     </Link>
     <div>
       <h3>
@@ -67,7 +59,7 @@ const PostPreview = ({ post, direction }) => (
       <p>{post.excerpt}</p>
       <ReadLink to={post.slug}>read this post &rarr;</ReadLink>
     </div>
-  </StyledArticle>
+  </Article>
 )
 
 PostPreview.propTypes = {

@@ -1,12 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Header from './header'
 import Footer from './footer'
 
 import GlobalStyle from '../styles/global'
 import SEO from './seo'
+
+const PostMain = styled.main`
+  width: var(--max-width);
+  max-width: 90vw;
+  margin: 11rem auto 4rem;
+  flex-grow: 1;
+
+  > * + * {
+    margin-top: 4em;
+  }
+`
+
+const PostBody = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 const PostLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,31 +42,11 @@ const PostLayout = ({ children }) => {
     <>
       <SEO />
       <GlobalStyle />
-      <div
-        css={`
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          min-height: 100vh;
-        `}
-      >
+      <PostBody>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main
-          css={`
-            width: var(--max-width);
-            max-width: 90vw;
-            margin: 11rem auto 4rem;
-            flex-grow: 1;
-
-            > * + * {
-              margin-top: 4em;
-            }
-          `}
-        >
-          {children}
-        </main>
+        <PostMain>{children}</PostMain>
         <Footer />
-      </div>
+      </PostBody>
     </>
   )
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
+import PostsGrid from '../components/posts-grid'
 import ReadLink from '../components/read-link'
 
 import usePosts from '../hooks/use-posts'
@@ -23,14 +24,12 @@ const WritingPage = () => {
         </p>
         <p>Maybe a sexy little sidebar over there &larr; or over there &rarr;</p>
       </section>
-      <section
-        css={`
-          margin-bott: 4rem;
-        `}
-      >
-        {posts.map(post => (
-          <PostPreview key={post.slug} post={post} />
-        ))}
+      <section>
+        <PostsGrid columns='1fr'>
+          {posts.map(post => (
+            <PostPreview key={post.slug} post={post} />
+          ))}
+        </PostsGrid>
       </section>
       <ReadLink to='/'>&larr; Back Home</ReadLink>
     </Layout>

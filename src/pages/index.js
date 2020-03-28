@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
+import PostsGrid from '../components/posts-grid'
 
 import usePosts from '../hooks/use-posts'
 
@@ -34,17 +35,11 @@ const IndexPage = () => {
         >
           Recent Blog Posts
         </h2>
-        <div
-          css={`
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 2rem;
-          `}
-        >
+        <PostsGrid>
           {posts.map(post => (
             <PostPreview direction='column' key={post.slug} post={post} />
           ))}
-        </div>
+        </PostsGrid>
       </section>
     </Layout>
   )

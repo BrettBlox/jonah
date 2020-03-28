@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import PostLayout from '../layout'
+import PostLayout from '../posts-layout'
 import ReadLink from '../read-link'
 import SEO from '../seo'
 
