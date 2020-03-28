@@ -24,6 +24,13 @@ const StyledArticle = styled.article`
   div {
     padding: 1.15em 1.85em;
   }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    > a {
+      width: 100%;
+    }
+  }
 `
 
 const PostPreview = ({ post }) => (
@@ -33,7 +40,6 @@ const PostPreview = ({ post }) => (
       css={`
         margin: 1rem 1rem 0 0;
         margin-top: 0;
-        width: 300px;
       `}
     >
       <BackgroundImage
