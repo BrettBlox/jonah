@@ -5,7 +5,7 @@ const ReadLink = styled(Link)`
   display: inline-block;
   font-size: 0.875rem;
   text-transform: uppercase;
-  color: var(--dark);
+  color: var(--grey-900);
 `
 
 export default ReadLink

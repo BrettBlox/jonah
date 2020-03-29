@@ -49,7 +49,7 @@ const PostImage = styled(BackgroundImage)`
 
 const PostPreview = ({ post, direction }) => (
   <Article direction={direction}>
-    <Link to={post.slug}>
+    <Link to={post.slug} aria-label='Read this post'>
       <PostImage fluid={post.image.sharp.fluid} alt={post.title} />
     </Link>
     <div>

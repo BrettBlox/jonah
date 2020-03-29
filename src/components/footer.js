@@ -11,7 +11,7 @@ const StyledFooter = styled.footer`
   text-align: center;
   width: 100vw;
   padding: 3rem calc((100vw - var(--header-width)) / 2) 1rem;
-  color: var(--grey-500);
+  color: var(--grey-400);
 
   > * {
     margin-bottom: 2rem;
@@ -59,17 +59,17 @@ const Footer = ({ siteTitle }) => (
     </div>
     <ul>
       <li>
-        <NavLink fontWeight='400' color='var(--grey-500)' activeClassName='active' to='/writing'>
+        <NavLink fontWeight='400' color='var(--grey-400)' activeClassName='active' to='/writing'>
           Writing
         </NavLink>
       </li>
       <li>
-        <NavLink fontWeight='400' color='var(--grey-500)' activeClassName='active' to='/about'>
+        <NavLink fontWeight='400' color='var(--grey-400)' activeClassName='active' to='/about'>
           About
         </NavLink>
       </li>
       <li>
-        <NavLink fontWeight='400' color='var(--grey-500)' activeClassName='active' to='/contact'>
+        <NavLink fontWeight='400' color='var(--grey-400)' activeClassName='active' to='/contact'>
           Get in Touch
         </NavLink>
       </li>

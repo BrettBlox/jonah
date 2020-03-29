@@ -11,14 +11,11 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-transition-link`,
     // {
-    //   resolve: `gatsby-plugin-mdx`,
+    //   resolve: `gatsby-plugin-transition-link`,
     //   options: {
-    //     extensions: ['.mdx', '.md'],
-    //     defaultLayout: {
-    //       // blog: require.resolve('./src/components/blog-layout.js'),
-    //       default: require.resolve('./src/components/layout.js'),
-    //     },
+    //     layout: require.resolve('./src/components/layout.js'),
     //   },
     // },
     {
@@ -53,7 +50,7 @@ module.exports = {
     //     name: `The Humdrum Dandelion`,
     //     short_name: `Humdrum Dandelion`,
     //     start_url: `/`,
-    //     icon: `content/images/dandelion.svg`,
+    //     icon: `content/icons/dandelion.svg`,
     //   },
     // },
     `gatsby-plugin-netlify-cms`,
