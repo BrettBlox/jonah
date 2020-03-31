@@ -15,6 +15,7 @@ const InstaGrid = styled.section`
     grid-gap: 2rem;
     margin-bottom: 2rem;
     justify-content: space-between;
+    padding-top: 1.25rem;
 
     a {
       box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
@@ -29,8 +30,6 @@ const InstaGrid = styled.section`
         transform: translateY(-3px) scale(1.01);
       }
     }
-
-    
   }
 
   a {
@@ -46,7 +45,7 @@ const Insta = () => {
   const { username } = instaPhotos[0]
   return (
     <InstaGrid>
-      <h2>Instagram posts from @{username}</h2>
+      <h2>Instagram posts from {username}</h2>
       <div>
         {instaPhotos.map(photo => (
           <a key={photo.id} href={`https://instagram.com/p/${photo.id}`}>
