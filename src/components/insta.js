@@ -6,7 +6,7 @@ import useInstagram from '../hooks/use-instagram'
 
 const InstaGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, 261px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 2rem;
   margin-bottom: 2rem;
   justify-content: space-between;
@@ -32,8 +32,13 @@ const Insta = () => {
   const pickles = 'pickles'
   return (
     <>
-      <h2>Instagram posts from {username}</h2>
+      <h2>Instagram posts from @{username}</h2>
       <InstaGrid>
+        {instaPhotos.map(photo => (
+          <a key={photo.id} href={`https://instagram.com/p/${photo.id}`}>
+            <Image alt={photo.caption} fluid={photo.fluid} />
+          </a>
+        ))}
         {instaPhotos.map(photo => (
           <a key={photo.id} href={`https://instagram.com/p/${photo.id}`}>
             <Image alt={photo.caption} fluid={photo.fluid} />
