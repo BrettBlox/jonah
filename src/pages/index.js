@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
 import PostsGrid from '../components/posts-grid'
+import Insta from '../components/insta'
 
 import usePosts from '../hooks/use-posts'
 
@@ -46,6 +47,7 @@ const IndexPage = () => {
           ))}
         </PostsGrid>
       </RecentPosts>
+      <Insta />
     </Layout>
   )
 }
