@@ -29,6 +29,8 @@ const InstaGrid = styled.section`
         transform: translateY(-3px) scale(1.01);
       }
     }
+
+    
   }
 
   a {
