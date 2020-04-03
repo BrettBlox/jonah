@@ -4,7 +4,6 @@ import Image from 'gatsby-image'
 
 import ReadLink from '../components/read-link'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -19,8 +18,7 @@ const AboutPage = () => {
     }
   `)
   return (
-    <Layout>
-      <SEO title='About Jo' lang='en' />
+    <Layout title='About Jo' lang='en'>
       <Image
         css={`
           width: 400px;

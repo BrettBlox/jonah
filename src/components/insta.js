@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
 import useInstagram from '../hooks/use-instagram'
 
-const InstaGrid = styled.section`
+const InstaGrid = styled(motion.section)`
   h2 {
     text-align: center;
   }
@@ -40,11 +42,11 @@ const InstaGrid = styled.section`
   }
 `
 
-const Insta = () => {
+const Insta = ({ variants }) => {
   const instaPhotos = useInstagram()
   const { username } = instaPhotos[0]
   return (
-    <InstaGrid>
+    <InstaGrid variants={variants}>
       <h2>Instagram posts from {username}</h2>
       <div>
         {instaPhotos.map(photo => (
@@ -111,6 +113,10 @@ const Insta = () => {
       <a href={`https://instagram.com/${username}`}>See more on Instagram &rarr;</a>
     </InstaGrid>
   )
+}
+
+Insta.propTypes = {
+  variants: PropTypes.object,
 }
 
 export default Insta

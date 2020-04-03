@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Location } from '@reach/router'
 import styled from 'styled-components'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import Header from './header'
 import Footer from './footer'
@@ -9,7 +12,7 @@ import Footer from './footer'
 import GlobalStyle from '../styles/global'
 import SEO from './seo'
 
-const Main = styled.main`
+const Main = styled(motion.main)`
   width: var(--max-width);
   max-width: 90vw;
   margin: 11rem auto 4rem;
@@ -45,7 +48,9 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Body>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Main>{children}</Main>
+        <AnimatePresence exitBeforeEnter>
+          <Location>{({ location }) => <Main key={location.pathname}>{children}</Main>}</Location>
+        </AnimatePresence>
         <Footer />
       </Body>
     </>
