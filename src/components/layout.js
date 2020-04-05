@@ -16,7 +16,7 @@ const Main = styled(motion.main)`
   margin: 11rem auto 4rem;
   flex-grow: 1;
 
-  > * + * {
+  > * > * + * {
     margin-top: 4em;
   }
 `

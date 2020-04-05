@@ -589,10 +589,6 @@ const reset = css`
     text-decoration-skip-ink: auto;
   }
 
-  /* Natural flow and rhythm in articles by default */
-  /* article > * + * {
-    margin-top: 1em;
-  } */
 
   /* Remove all animations and transitions for people that prefer not to see them */
   @media (prefers-reduced-motion: reduce) {

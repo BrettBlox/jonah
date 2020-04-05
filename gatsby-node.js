@@ -23,6 +23,17 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               title
+              image {
+                sharp: childImageSharp {
+                  fluid {
+                    src
+                    srcSet
+                    aspectRatio
+                    base64
+                    srcWebp
+                  }
+                }
+              }
             }
             fields {
               slug
@@ -40,6 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
+        image: node.frontmatter.image,
         slug: node.fields.slug,
         prev: index === 0 ? null : posts[index - 1].node,
         next: index === posts.length - 1 ? null : posts[index + 1].node,
