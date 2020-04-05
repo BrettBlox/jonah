@@ -2,10 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
+import SEO from '../components/seo'
+
 const ContactPage = () => (
-  <div>
+  <>
+    <SEO title='Contact' lang='en' />
     <h1>Contact form will go here</h1>
-  </div>
+  </>
 )
 
 export default ContactPage

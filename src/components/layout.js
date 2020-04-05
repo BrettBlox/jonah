@@ -47,7 +47,9 @@ const Layout = ({ children, location }) => {
       <Body>
         <Header siteTitle={data.site.siteMetadata.title} />
         <AnimatePresence exitBeforeEnter>
-          <Main key={location.pathname}>{children}</Main>
+          <Main key={location.pathname} initial='exit' animate='enter' exit='exit'>
+            {children}
+          </Main>
         </AnimatePresence>
         <Footer />
       </Body>
