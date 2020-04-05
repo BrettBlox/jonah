@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
+import { motion } from 'framer-motion'
 
 const ContactPage = () => (
-  <Layout title='Contact' lang='en'>
+  <div>
     <h1>Contact form will go here</h1>
-  </Layout>
+  </div>
 )
 
 export default ContactPage

@@ -1,9 +1,11 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
+import { motion } from 'framer-motion'
+
+import { primary, secondary } from '../variants'
 
 import ReadLink from '../components/read-link'
-import Layout from '../components/layout'
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -18,17 +20,19 @@ const AboutPage = () => {
     }
   `)
   return (
-    <Layout title='About Jo' lang='en'>
-      <Image
-        css={`
-          width: 400px;
-          max-width: 70vw;
-          border-radius: 50%;
-          margin: 0 auto;
-        `}
-        fluid={data.file.sharp.fluid}
-      />
-      <section>
+    <motion.div initial='exit' animate='enter' exit='exit'>
+      <motion.div variants={primary}>
+        <Image
+          css={`
+            width: 400px;
+            max-width: 70vw;
+            border-radius: 50%;
+            margin: 0 auto;
+          `}
+          fluid={data.file.sharp.fluid}
+        />
+      </motion.div>
+      <motion.section variants={secondary}>
         <h1>About Jonah</h1>
         <p>
           Tacos iceland stumptown meggings, chambray master cleanse cold-pressed. Messenger bag lumbersexual man bun
@@ -48,9 +52,11 @@ const AboutPage = () => {
           before they sold out bitters semiotics. Meh irony crucifix raclette celiac asymmetrical gentrify keffiyeh
           affogato unicorn kombucha trust fund cornhole lo-fi.
         </p>
-      </section>
-      <ReadLink to='/'>&larr; Back Home</ReadLink>
-    </Layout>
+      </motion.section>
+      <motion.div variants={secondary}>
+        <ReadLink to='/'>&larr; Back Home</ReadLink>
+      </motion.div>
+    </motion.div>
   )
 }
 

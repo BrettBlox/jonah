@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Location } from '@reach/router'
 import styled from 'styled-components'
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -31,7 +29,7 @@ const Body = styled.div`
   overflow-x: hidden;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -49,7 +47,7 @@ const Layout = ({ children }) => {
       <Body>
         <Header siteTitle={data.site.siteMetadata.title} />
         <AnimatePresence exitBeforeEnter>
-          <Location>{({ location }) => <Main key={location.pathname}>{children}</Main>}</Location>
+          <Main key={location.pathname}>{children}</Main>
         </AnimatePresence>
         <Footer />
       </Body>
@@ -59,6 +57,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.object,
 }
 
 export default Layout
