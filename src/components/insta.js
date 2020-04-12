@@ -18,7 +18,7 @@ const InstaGrid = styled(motion.section)`
   > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     justify-content: space-between;
     padding-top: 1.25rem;
 
