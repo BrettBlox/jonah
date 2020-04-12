@@ -16,10 +16,6 @@ const Main = styled(motion.main)`
   margin: 11rem auto 4rem;
   flex-grow: 1;
 
-  > section {
-    margin-top: 4rem;
-  }
-
   > * > * + * {
     margin-top: 4em;
   }

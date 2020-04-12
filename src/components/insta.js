@@ -8,7 +8,7 @@ import useInstagram from '../hooks/use-instagram'
 
 const InstaGrid = styled(motion.section)`
   h2 {
-    text-align: center;
+    /* text-align: center; */
   }
 
   img {

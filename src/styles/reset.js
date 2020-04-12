@@ -201,8 +201,6 @@ const reset = css`
     box-sizing: inherit;
   }
   body {
-    color: hsla(0, 0%, 0%, 0.8);
-    font-family: georgia, serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -268,7 +266,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    line-height: 1.1;
   }
   h4 {
     margin-left: 0;
@@ -284,7 +281,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    line-height: 1.1;
   }
   h5 {
     margin-left: 0;
@@ -300,7 +296,6 @@ const reset = css`
       Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    line-height: 1.1;
   }
   h6 {
     margin-left: 0;

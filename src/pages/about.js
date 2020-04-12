@@ -48,8 +48,8 @@ const AboutPage = () => {
             fluid={frontmatter.image.sharp.fluid}
           />
         </motion.div>
-        <motion.section variants={secondary}>
-          <h1>{frontmatter.title}</h1>
+        <motion.section aria-labelledby={frontmatter.title} variants={secondary}>
+          <h1 id={frontmatter.title}>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
         <motion.div variants={secondary}>

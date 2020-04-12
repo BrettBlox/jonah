@@ -34,3 +34,12 @@ collections:
         - { label: 'Page Title', name: 'title', widget: 'string' }
         - { label: 'Image', name: 'image', widget: 'image' }
         - { label: 'About Page Text', name: 'body', widget: 'markdown' }
+    - name: 'welcome'
+      label: 'Welcome Message'
+      file: 'content/page-content/index.md'
+      editor:
+        preview: false
+      fields:
+        - { label: 'Hero Image', name: 'image', widget: 'image' }
+        - { label: 'Welcome Title', name: 'title', widget: 'string' }
+        - { label: 'Welcome Text', name: 'body', widget: 'markdown' }

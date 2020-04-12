@@ -33,16 +33,9 @@ const typography = css`
   h1 {
     --fluid-type-min-size: 1.62671;
     --fluid-type-max-size: 2.25;
-
-    /* I should move this where it is needed */
-    &::after {
-      content: '';
-      height: 1px;
-      background-color: var(--light);
-      width: 100%;
-      display: block;
-      margin: 0.5em 0 1em;
-    }
+    font-weight: 900;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--grey-400);
   }
 
   h2 {
