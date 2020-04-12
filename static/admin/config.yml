@@ -24,6 +24,8 @@ collections:
       - { label: 'Post Body', name: 'body', widget: 'markdown' }
   - name: 'page-content'
     label: 'Custom Page Content'
+    editor:
+      preview: false
     files:
       - name: 'about'
         label: 'About Page'
