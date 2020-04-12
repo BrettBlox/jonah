@@ -52,9 +52,10 @@ const PostPreview = ({ post, direction }) => (
       <PostImage fluid={post.image.sharp.fluid} alt={post.title} />
     </Link>
     <div>
-      <h3>
-        <Link to={post.slug}>{post.title}</Link>
-      </h3>
+      <Link to={post.slug}>
+        <h3>{post.title}</h3>
+      </Link>
+
       <p>{post.excerpt}</p>
       <ReadLink to={post.slug}>read this post &rarr;</ReadLink>
     </div>

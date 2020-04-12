@@ -17,8 +17,8 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     color: inherit;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
 
     &:hover {
       text-decoration: underline;

@@ -19,6 +19,13 @@ const Main = styled(motion.main)`
   > * > * + * {
     margin-top: 4em;
   }
+
+  @media screen and (max-width: 500px) {
+    margin: 11rem auto 3rem;
+    > * > * + * {
+      margin-top: 3em;
+    }
+  }
 `
 
 const Body = styled.div`

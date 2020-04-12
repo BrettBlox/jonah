@@ -232,7 +232,6 @@ const reset = css`
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
       Helvetica Neue, sans-serif;
-    font-weight: bold;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
   }
@@ -246,9 +245,6 @@ const reset = css`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    font-weight: bold;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
   }
@@ -262,9 +258,6 @@ const reset = css`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    font-weight: bold;
     text-rendering: optimizeLegibility;
   }
   h4 {
@@ -277,9 +270,6 @@ const reset = css`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    font-weight: bold;
     text-rendering: optimizeLegibility;
   }
   h5 {
@@ -292,9 +282,6 @@ const reset = css`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    font-weight: bold;
     text-rendering: optimizeLegibility;
   }
   h6 {
@@ -307,9 +294,6 @@ const reset = css`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    font-weight: bold;
     text-rendering: optimizeLegibility;
   }
   hgroup {
@@ -583,7 +567,6 @@ const reset = css`
   a:not([class]) {
     text-decoration-skip-ink: auto;
   }
-
 
   /* Remove all animations and transitions for people that prefer not to see them */
   @media (prefers-reduced-motion: reduce) {
