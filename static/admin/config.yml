@@ -28,6 +28,8 @@ collections:
     - name: 'about'
       label: 'About Page'
       file: 'content/page-content/about.md'
+      editor:
+        preview: false
       fields:
         - { label: 'Page Title', name: 'title', widget: 'string' }
         - { label: 'Image', name: 'image', widget: 'image' }
