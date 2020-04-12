@@ -7,7 +7,6 @@ import BackgroundImage from 'gatsby-background-image'
 import ReadLink from './read-link'
 
 const Article = styled.article`
-  margin-top: 1rem;
   display: flex;
   flex-direction: ${props => props.direction && props.direction};
   border-radius: 0.5em;

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Humdrum Dandelion`,
-    description: `Jo's personal website and blog.`,
+    description: `Creative outlet for Jonah's incredible mind and a canvas for her beautiful words.`,
     author: `Brett Bloxom`,
   },
   plugins: [
@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/content/blog`,
+        name: `writing`,
+        path: `${__dirname}/content/writing`,
       },
     },
     {

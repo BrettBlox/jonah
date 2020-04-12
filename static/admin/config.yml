@@ -9,9 +9,9 @@ media_folder: content/images
 public_folder: /images
 
 collections:
-  - name: 'blog'
-    label: 'Blog Post'
-    folder: 'content/blog'
+  - name: 'writing'
+    label: 'Writing'
+    folder: 'content/writing'
     create: true
     slug: '{{slug}}'
     editor:

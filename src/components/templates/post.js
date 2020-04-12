@@ -32,7 +32,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           <h1>{post.frontmatter.title}</h1>
           <p>Written by {post.frontmatter.author}</p>
           <p>{post.frontmatter.date}</p>
-          <div className='blog-post-content' dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </motion.div>
         {prev && <ReadLink to={prev.fields.slug}>&larr; {prev.frontmatter.title}</ReadLink>}
         {next && <ReadLink to={next.fields.slug}>{next.frontmatter.title} &rarr; </ReadLink>}
@@ -42,7 +42,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
 }
 
 export const pageQuery = graphql`
-  query BlogPostQuery($slug: String!) {
+  query PostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

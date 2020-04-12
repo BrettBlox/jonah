@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 const usePosts = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/blog/*" } }) {
+      allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/writing/*" } }) {
         nodes {
           fields {
             slug

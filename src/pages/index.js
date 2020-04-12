@@ -1,6 +1,8 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import Image from 'gatsby-image'
 
 import { primary, secondary } from '../variants'
 
@@ -12,16 +14,37 @@ import Insta from '../components/insta'
 import usePosts from '../hooks/use-posts'
 
 const RecentPosts = styled(motion.section)`
-  padding: 4rem 0;
+  padding: 2rem 0;
+`
+
+const HeroImage = styled(Image)`
+  max-height: 400px;
+  margin-bottom: 1.45em;
+  margin-top: -2.75rem;
 `
 
 const IndexPage = () => {
   const posts = usePosts()
 
+  const indexData = useStaticQuery(graphql`
+    query IndexQuery {
+      file(absolutePath: { glob: "**/content/images/hero-dandelion.jpg" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <>
       <SEO title='Home' lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
+        <motion.div variants={primary}>
+          <HeroImage fluid={indexData.file.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />
+        </motion.div>
         <motion.section variants={primary}>
           <h1>Hi Jonah!!!</h1>
           <p>I love you so much and cant wait for you to be able to use this thing.</p>
@@ -38,20 +61,21 @@ const IndexPage = () => {
             you to share that brilliance with me and the rest of the world. I'm so excited to hear your words.
           </p>
         </motion.section>
-        <RecentPosts variants={secondary}>
+        <section aria-labelledby='recent-writing' variants={secondary}>
           <h2
+            id='recent-writing'
             css={`
               text-align: center;
             `}
           >
-            Recent Blog Posts
+            Recent Writing
           </h2>
           <PostsGrid>
             {posts.map(post => (
               <PostPreview direction='column' key={post.slug} post={post} />
             ))}
           </PostsGrid>
-        </RecentPosts>
+        </section>
         <Insta variants={secondary} />
       </motion.div>
     </>

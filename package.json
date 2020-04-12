@@ -1,7 +1,7 @@
 {
 	"name": "gatsby-starter-default",
 	"private": true,
-	"description": "Blog and creative outlet for Jonah's incredible mind and beautiful words.",
+	"description": "Creative outlet for Jonah's incredible mind and a canvas for her beautiful words.",
 	"version": "0.1.0",
 	"author": "Brett Bloxom <brettbloxom@gmail.com>",
 	"dependencies": {

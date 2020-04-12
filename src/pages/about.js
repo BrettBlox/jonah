@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery, StaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
 import { motion } from 'framer-motion'
 
