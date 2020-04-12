@@ -38,6 +38,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `Page Content`,
+        path: `${__dirname}/content/page-content`,
+      },
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `the.humdrum.dandelion`,

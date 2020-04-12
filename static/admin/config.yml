@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
+publish_mode: editorial_workflow
+
 media_folder_relative: true
 media_folder: content/images
 public_folder: /images
@@ -20,3 +22,13 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Post Body', name: 'body', widget: 'markdown' }
+  - name: 'page content'
+    label: 'Custom Page Content'
+    files:
+    - name: 'about'
+      label: 'About Page'
+      file: 'content/page-content/about.md'
+      fields:
+        - { label: 'Page Title', name: 'title', widget: 'string' }
+        - { label: 'Image', name: 'image', widget: 'image' }
+        - { label: 'About Page Text', name: 'body', widget: 'markdown' }
