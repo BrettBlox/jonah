@@ -19,6 +19,12 @@ const Post = styled(motion.div)`
   margin-top: -2.75rem;
 `
 
+const NextPrev = styled(motion.div)`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
+
 const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
   const { next, prev, image } = pageContext
   return (
@@ -34,8 +40,10 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           <p>{post.frontmatter.date}</p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </motion.div>
-        {prev && <ReadLink to={prev.fields.slug}>&larr; {prev.frontmatter.title}</ReadLink>}
-        {next && <ReadLink to={next.fields.slug}>{next.frontmatter.title} &rarr; </ReadLink>}
+        <NextPrev variants={secondary}>
+          {prev && <ReadLink to={prev.fields.slug}>&larr; {prev.frontmatter.title}</ReadLink>}
+          {next && <ReadLink to={next.fields.slug}>{next.frontmatter.title} &rarr; </ReadLink>}
+        </NextPrev>
       </Post>
     </>
   )

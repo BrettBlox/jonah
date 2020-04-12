@@ -13,10 +13,6 @@ import Insta from '../components/insta'
 
 import usePosts from '../hooks/use-posts'
 
-const RecentPosts = styled(motion.section)`
-  padding: 2rem 0;
-`
-
 const HeroImage = styled(Image)`
   max-height: 400px;
   margin-bottom: 1.45em;
@@ -45,8 +41,8 @@ const IndexPage = () => {
         <motion.div variants={primary}>
           <HeroImage fluid={indexData.file.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />
         </motion.div>
-        <motion.section variants={primary}>
-          <h1>Hi Jonah!!!</h1>
+        <motion.section aria-labelledby='welcome-message' variants={primary}>
+          <h1 id='welcom-message'>Hi Jonah!!!</h1>
           <p>I love you so much and cant wait for you to be able to use this thing.</p>
           <p>
             Im not sure what you will end up wanting on this homepage. Maybe a handful of posts and some other stuff?

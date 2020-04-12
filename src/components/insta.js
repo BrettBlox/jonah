@@ -11,11 +11,14 @@ const InstaGrid = styled(motion.section)`
     text-align: center;
   }
 
+  img {
+    margin: 0;
+  }
+
   > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 2rem;
-    margin-bottom: 2rem;
     justify-content: space-between;
     padding-top: 1.25rem;
 
@@ -34,11 +37,12 @@ const InstaGrid = styled(motion.section)`
     }
   }
 
-  a {
+  a.instalink {
     display: inline-block;
     font-size: 0.875rem;
     text-transform: uppercase;
     color: var(--grey-900);
+    margin-top: 4rem;
   }
 `
 
@@ -46,8 +50,8 @@ const Insta = ({ variants }) => {
   const instaPhotos = useInstagram()
   const { username } = instaPhotos[0]
   return (
-    <InstaGrid variants={variants}>
-      <h2>Instagram posts from {username}</h2>
+    <InstaGrid variants={variants} aria-labelledby='instagram-posts'>
+      <h2 id='instagram-posts'>Instagram posts from {username}</h2>
       <div>
         {instaPhotos.map(photo => (
           <a key={photo.id} href={`https://instagram.com/p/${photo.id}`}>
@@ -110,7 +114,9 @@ const Insta = ({ variants }) => {
           </a>
         ))}
       </div>
-      <a href={`https://instagram.com/${username}`}>See more on Instagram &rarr;</a>
+      <a className='instalink' href={`https://instagram.com/${username}`}>
+        See more on Instagram &rarr;
+      </a>
     </InstaGrid>
   )
 }
