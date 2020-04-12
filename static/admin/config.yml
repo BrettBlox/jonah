@@ -40,6 +40,7 @@ collections:
       editor:
         preview: false
       fields:
-        - { label: 'Hero Image', name: 'image', widget: 'image' }
         - { label: 'Welcome Title', name: 'title', widget: 'string' }
+        - { label: 'Hero Image', name: 'image', widget: 'image' }
         - { label: 'Welcome Text', name: 'body', widget: 'markdown' }
+
