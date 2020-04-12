@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Welcome to The Humdrum Dandelion
 hero: /images/hero-dandelion.jpg
 ---
 
