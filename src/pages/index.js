@@ -53,7 +53,7 @@ const IndexPage = () => {
         <motion.section variants={primary}>
           <HeroImage fluid={frontmatter.hero.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />
         </motion.section>
-        <motion.section aria-labelledby='welcome-message' variants={primary}>
+        <motion.section aria-labelledby='welcome-message' variants={secondary}>
           <h1
             css={`
               text-align: center;
@@ -64,7 +64,7 @@ const IndexPage = () => {
           </h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
-        <section aria-labelledby='recent-writing' variants={secondary}>
+        <motion.section aria-labelledby='recent-writing' variants={secondary}>
           <h2
             id='recent-writing'
             // css={`
@@ -78,7 +78,7 @@ const IndexPage = () => {
               <PostPreview direction='column' key={post.slug} post={post} />
             ))}
           </PostsGrid>
-        </section>
+        </motion.section>
         <Insta variants={secondary} />
       </motion.div>
     </>
