@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { motion } from 'framer-motion'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
@@ -26,13 +26,13 @@ const NextPrev = styled(motion.div)`
 `
 
 const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
-  const { next, prev, image } = pageContext
+  const { next, prev } = pageContext
   return (
     <>
       <SEO title={post.frontmatter.title} lang='en' />
       <Post initial='exit' animate='enter' exit='exit'>
         <motion.div variants={primary}>
-          <PostImage fluid={image.sharp.fluid} alt={post.frontmatter.title} className='full-bleed' />
+          <PostImage fluid={post.frontmatter.image.sharp.fluid} alt={post.frontmatter.title} className='full-bleed' />
         </motion.div>
         <motion.div variants={secondary}>
           <h1>{post.frontmatter.title}</h1>
@@ -57,6 +57,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         author
         title
+        image {
+          sharp: childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
     }
   }
