@@ -1,5 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'gatsby-image'
+import { useStaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
@@ -10,13 +13,34 @@ import { primary, secondary } from '../variants'
 
 import usePosts from '../hooks/use-posts'
 
+const HeroImage = styled(Image)`
+  max-height: 400px;
+  margin-bottom: 1.45em;
+  margin-top: -2.75rem;
+`
+
 const WritingPage = () => {
   const posts = usePosts()
+
+  const data = useStaticQuery(graphql`
+    query WritingQuery {
+      file(absolutePath: { glob: "**/content/images/white-dandelion.jpg" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <>
       <SEO title='Writing' lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
+        <motion.section variants={primary}>
+          <HeroImage fluid={data.file.sharp.fluid} alt='White dandelion image' className='full-bleed' />
+        </motion.section>
         <motion.section variants={primary}>
           <h1>Writing Page</h1>
           <p>
