@@ -12,7 +12,8 @@ const StyledHeader = styled.header`
   letter-spacing: 0.08em;
   position: fixed;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(180deg, rgba(82, 107, 45, 0.05), rgba(82, 107, 45, 0.05)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
   z-index: 10;
 
   nav {
