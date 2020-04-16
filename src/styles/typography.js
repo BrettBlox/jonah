@@ -5,13 +5,12 @@ const typography = css`
     --fluid-type-min-size: 0.875;
     --fluid-type-max-size: 1;
 
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
+    font-family: Eczar, IM Fell English, Georgia, serif;
     font-size: calc(
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
-    color: var(--grey-700);
+    color: var(--grey-900);
     line-height: 1.58;
   }
 
@@ -28,7 +27,7 @@ const typography = css`
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
     letter-spacing: 0.08em;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Eczar, IM Fell English, Georgia, serif;
     font-weight: 500;
   }
 
