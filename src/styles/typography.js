@@ -19,7 +19,8 @@ const typography = css`
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  label {
     color: var(--grey-900);
     text-transform: uppercase;
     font-size: calc(
@@ -48,7 +49,8 @@ const typography = css`
     --fluid-type-max-size: 1.38316;
   }
 
-  h4 {
+  h4,
+  label {
     --fluid-type-min-size: 0.85028;
     --fluid-type-max-size: 1;
   }

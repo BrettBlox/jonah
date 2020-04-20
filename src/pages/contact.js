@@ -48,10 +48,9 @@ const Form = styled(motion.form)`
   border-radius: 0.5em;
   background: linear-gradient(180deg, rgba(82, 107, 45, 0.06), rgba(82, 107, 45, 0.06)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-  padding: 8em;
+  padding: 4rem 8rem;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
     0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  /* height: 300px; */
 
   grid-template-areas:
     'person email'
@@ -59,31 +58,34 @@ const Form = styled(motion.form)`
     'button button';
   grid-gap: 2rem;
 
-  label {
-    margin: 0;
-  }
-
   input,
   textarea {
     background-color: transparent;
     width: 100%;
-  }
-
-  input {
     border: 0;
     border-bottom: 1px solid var(--green);
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
-  [for='name'] {
+  div {
+    margin: 0 0 2rem;
+    position: relative;
+    width: 100%;
+  }
+
+  div:first-of-type {
     grid-area: person;
   }
 
-  [for='email'] {
+  div:nth-child(2) {
     grid-area: email;
   }
 
-  [for='message'] {
+  div:last-of-type {
     grid-area: message;
+    width: 100%;
   }
 
   [type='submit'] {
@@ -183,40 +185,52 @@ const ContactPage = () => {
     <>
       <SEO title='Contact' />
       <h1>Send a Message</h1>
-      <Form onSubmit={handleSubmit} netlify>
-        <label htmlFor='name'>
-          Name
-          <input
-            id='name'
-            name='name'
-            type='text'
-            value={state.name}
-            onChange={e => updateFieldValue(e.target.name, e.target.value)}
-            required
-          />
-        </label>
-        <label htmlFor='email'>
-          Email
-          <input
-            id='email'
-            name='email'
-            type='email'
-            value={state.email}
-            onChange={e => updateFieldValue(e.target.name, e.target.value)}
-            required
-          />
-        </label>
-        <label htmlFor='message'>
-          Message
-          <textarea
-            id='message'
-            name='message'
-            type='text'
-            value={state.message}
-            onChange={e => updateFieldValue(e.target.name, e.target.value)}
-            required
-          />
-        </label>
+      <Form onSubmit={handleSubmit} method='POST' data-netlify='true' netlify-honeypot='bot-field'>
+        <p className='visually-hidden'>
+          <label htmlFor='bot-field'>
+            Don't fill this out if you are human...
+            <input id='bot-field' name='bot-field' />
+          </label>
+        </p>
+        <div>
+          <label htmlFor='name'>
+            Name
+            <input
+              id='name'
+              name='name'
+              type='text'
+              value={state.name}
+              onChange={e => updateFieldValue(e.target.name, e.target.value)}
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label htmlFor='email'>
+            Email
+            <input
+              id='email'
+              name='email'
+              type='email'
+              value={state.email}
+              onChange={e => updateFieldValue(e.target.name, e.target.value)}
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label htmlFor='message'>
+            Message
+            <textarea
+              id='message'
+              name='message'
+              type='text'
+              value={state.message}
+              onChange={e => updateFieldValue(e.target.name, e.target.value)}
+              required
+            />
+          </label>
+        </div>
         <button type='submit' disabled={state.status === PENDING}>
           {state.status !== PENDING ? 'Send' : 'Sending...'}
         </button>
