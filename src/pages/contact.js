@@ -152,60 +152,60 @@ const ContactPage = () => {
   }
 
   // MOCK submit handler
-  const handleSubmit = event => {
-    event.preventDefault()
+  // const handleSubmit = event => {
+  //   event.preventDefault()
 
-    updateStatus(PENDING)
+  //   updateStatus(PENDING)
 
-    const form = event.target
+  //   const form = event.target
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state,
-      }),
-    })
-      .then(() => updateStatus(SUCCESS))
-      .catch(error => {
-        console.error(error)
-        updateStatus(ERROR)
-      })
-  }
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({
+  //       'form-name': form.getAttribute('name'),
+  //       ...state,
+  //     }),
+  //   })
+  //     .then(() => updateStatus(SUCCESS))
+  //     .catch(error => {
+  //       console.error(error)
+  //       updateStatus(ERROR)
+  //     })
+  // }
 
   // Success state UI
-  if (state.status === SUCCESS) {
-    return (
-      <>
-        <SEO title='Contact' />
-        <p>Your message was sent successfully.</p>
-        <button type='button' onClick={resetForm}>
-          Send Another Message
-        </button>
-      </>
-    )
-  }
+  // if (state.status === SUCCESS) {
+  //   return (
+  //     <>
+  //       <SEO title='Contact' />
+  //       <p>Your message was sent successfully.</p>
+  //       <button type='button' onClick={resetForm}>
+  //         Send Another Message
+  //       </button>
+  //     </>
+  //   )
+  // }
 
-  // Error state UI
-  if (state.status === ERROR) {
-    return (
-      <>
-        <SEO title='Contact' />
-        <p>Something went wrong...</p>
-        <button type='button' onClick={resetForm}>
-          Try Again
-        </button>
-      </>
-    )
-  }
+  // // Error state UI
+  // if (state.status === ERROR) {
+  //   return (
+  //     <>
+  //       <SEO title='Contact' />
+  //       <p>Something went wrong...</p>
+  //       <button type='button' onClick={resetForm}>
+  //         Try Again
+  //       </button>
+  //     </>
+  //   )
+  // }
 
   // Default state UI
   return (
     <>
       <SEO title='Contact' />
       <h1>Send a Message</h1>
-      <Form onSubmit={handleSubmit} name='contact' method='POST' data-netlify='true' netlify-honeypot='bot'>
+      <Form action='/success/' name='contact' method='POST' data-netlify='true' netlify-honeypot='bot'>
         <input type='hidden' name='form-name' value='contact' />
         <p className='visually-hidden'>
           <label htmlFor='bot'>
