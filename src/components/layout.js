@@ -49,7 +49,6 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <SEO />
       <GlobalStyle />
       <Body>
         <Header siteTitle={data.site.siteMetadata.title} />
