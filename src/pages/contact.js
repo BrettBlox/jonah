@@ -5,6 +5,12 @@ import styled from 'styled-components'
 
 import SEO from '../components/seo'
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
+}
+
 // form status variables
 const IDLE = 'IDLE'
 const PENDING = 'PENDING'
@@ -13,6 +19,7 @@ const ERROR = 'ERROR'
 
 // initial state values
 const INITIAL_STATE = {
+  bot: '',
   name: '',
   email: '',
   subject: '',
@@ -147,11 +154,24 @@ const ContactPage = () => {
   // MOCK submit handler
   const handleSubmit = event => {
     event.preventDefault()
+
     updateStatus(PENDING)
 
-    setTimeout(() => {
-      updateStatus(SUCCESS)
-    }, 2000)
+    const form = event.target
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => updateStatus(SUCCESS))
+      .catch(error => {
+        console.error(error)
+        updateStatus(ERROR)
+      })
   }
 
   // Success state UI
@@ -185,11 +205,17 @@ const ContactPage = () => {
     <>
       <SEO title='Contact' />
       <h1>Send a Message</h1>
-      <Form onSubmit={handleSubmit} method='POST' data-netlify='true' netlify-honeypot='bot-field'>
+      <Form onSubmit={handleSubmit} name='contact' method='POST' data-netlify='true' netlify-honeypot='bot'>
+        <input type='hidden' name='form-name' value='contact' />
         <p className='visually-hidden'>
-          <label htmlFor='bot-field'>
+          <label htmlFor='bot'>
             Don't fill this out if you are human...
-            <input id='bot-field' name='bot-field' />
+            <input
+              id='bot'
+              name='bot'
+              value={state.bot}
+              onChange={e => updateFieldValue(e.target.name, e.target.value)}
+            />
           </label>
         </p>
         <div>
