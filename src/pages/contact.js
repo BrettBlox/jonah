@@ -115,10 +115,9 @@ const Form = styled(motion.form)`
   }
 `
 
-// Form component
 const ContactPage = () => {
   const [state, dispatch] = useReducer(formReducer, INITIAL_STATE, init)
-  console.log(state)
+
   // action creators
   const updateFieldValue = (field, value) => {
     dispatch({
@@ -184,7 +183,7 @@ const ContactPage = () => {
     <>
       <SEO title='Contact' />
       <h1>Send a Message</h1>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} netlify>
         <label htmlFor='name'>
           Name
           <input
