@@ -104,18 +104,10 @@ const ContactPage = () => {
           name='contact'
           method='POST'
           data-netlify='true'
-          netlify-honeypot='bot'
           variants={primary}
           onSubmit={handleSubmit}
         >
           <h1>Send me a Message</h1>
-          <input type='hidden' name='form-name' value='contact' />
-          <p hidden>
-            <label htmlFor='bot'>
-              Don't fill this out if you are human...
-              <input id='bot' name='bot' onChange={handleInputChange} />
-            </label>
-          </p>
           <div>
             <label htmlFor='name'>
               Name
