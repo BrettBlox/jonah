@@ -65,14 +65,7 @@ const IndexPage = () => {
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
         <motion.section aria-labelledby='recent-writing' variants={secondary}>
-          <h2
-            id='recent-writing'
-            // css={`
-            //   text-align: center;
-            // `}
-          >
-            Recent Writing
-          </h2>
+          <h2 id='recent-writing'>Recent Writing</h2>
           <PostsGrid>
             {posts.map(post => (
               <PostPreview direction='column' key={post.slug} post={post} />

@@ -6,6 +6,7 @@ const PostsGrid = ({ children, columns }) => (
       display: grid;
       grid-template-columns: ${columns || 'repeat(auto-fit, minmax(300px, 1fr))'};
       grid-gap: 2rem;
+      padding-top: 1rem;
     `}
   >
     {children}

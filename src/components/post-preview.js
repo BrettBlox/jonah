@@ -16,7 +16,7 @@ const Article = styled.article`
     linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
   overflow: hidden;
   text-align: left;
-  transition: all 0.15s ease-out;
+  transition: all 0.3s ease-out;
   height: 100%;
 
   :hover {

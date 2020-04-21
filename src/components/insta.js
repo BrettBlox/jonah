@@ -20,14 +20,14 @@ const InstaGrid = styled(motion.section)`
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 1rem;
     justify-content: space-between;
-    padding-top: 1.25rem;
+    padding-top: 1rem;
 
     a {
       box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
         0 -6px 16px -6px rgba(0, 0, 0, 0.025);
       overflow: hidden;
       border-radius: 0.5em;
-      transition: all 0.15s ease-out;
+      transition: all 0.3s ease-out;
 
       :hover {
         box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
