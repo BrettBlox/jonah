@@ -7,9 +7,9 @@ import ReadLink from '../components/read-link'
 
 import { primary, secondary } from '../variants'
 
-const Success = () => (
+const Thanks = () => (
   <>
-    <SEO title='Success!' />
+    <SEO title='Thanks!' />
     <motion.div initial='exit' animate='enter' exit='exit'>
       <motion.section variants={primary}>
         <h1>Thanks for your message!</h1>
@@ -22,4 +22,4 @@ const Success = () => (
   </>
 )
 
-export default Success
+export default Thanks

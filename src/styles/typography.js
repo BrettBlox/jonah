@@ -10,7 +10,7 @@ const typography = css`
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
-    color: var(--grey-900);
+    color: var(--green-800);
     line-height: 1.58;
   }
 
@@ -21,7 +21,7 @@ const typography = css`
   h5,
   h6,
   label {
-    color: var(--grey-900);
+    color: var(--green-900);
     text-transform: uppercase;
     font-size: calc(
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
@@ -36,7 +36,7 @@ const typography = css`
     --fluid-type-min-size: 1.62671;
     --fluid-type-max-size: 2.25;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--grey-400);
+    border-bottom: 1px solid var(--beige);
   }
 
   h2 {
