@@ -77,6 +77,11 @@ const Form = styled(motion.form)`
       background: linear-gradient(180deg, var(--green-400), var(--green-800));
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+    display: block;
+  }
 `
 
 const ContactPage = () => {
