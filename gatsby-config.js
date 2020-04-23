@@ -50,15 +50,15 @@ module.exports = {
         username: `the.humdrum.dandelion`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `The Humdrum Dandelion`,
-    //     short_name: `Humdrum Dandelion`,
-    //     start_url: `/`,
-    //     icon: `content/icons/dandelion.svg`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `The Humdrum Dandelion`,
+        short_name: `Humdrum Dandelion`,
+        start_url: `/`,
+        icon: `content/icons/dandelion.svg`,
+      },
+    },
     `gatsby-plugin-netlify-cms`,
   ],
 }
