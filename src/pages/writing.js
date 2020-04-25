@@ -42,7 +42,7 @@ const WritingPage = () => {
           <HeroImage fluid={data.file.sharp.fluid} alt='White dandelion image' className='full-bleed' />
         </motion.section>
         <motion.section variants={primary}>
-          <h1>Writing Page</h1>
+          <h1>Writing</h1>
           <p>
             This Page will list all of your posts and have an archive. Possibly some way of categorizing posts through
             tags so that there can be different collections of similar content. Eventually it might need to be paginated
