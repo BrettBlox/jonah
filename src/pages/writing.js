@@ -24,35 +24,41 @@ const WritingPage = () => {
 
   const data = useStaticQuery(graphql`
     query WritingQuery {
-      file(absolutePath: { glob: "**/content/images/white-dandelion.jpg" }) {
-        sharp: childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
+      allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/page-content/writing.md" } }) {
+        edges {
+          node {
+            frontmatter {
+              title
+              hero {
+                sharp: childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
+            html
           }
         }
       }
     }
   `)
 
+  const { frontmatter, html } = data.allMarkdownRemark.edges[0].node
+
   return (
     <>
       <SEO title='Writing' lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.section variants={primary}>
-          <HeroImage fluid={data.file.sharp.fluid} alt='White dandelion image' className='full-bleed' />
+          <HeroImage fluid={frontmatter.hero.sharp.fluid} alt='White dandelion image' className='full-bleed' />
         </motion.section>
-        <motion.section variants={primary}>
-          <h1>Writing</h1>
-          <p>
-            This Page will list all of your posts and have an archive. Possibly some way of categorizing posts through
-            tags so that there can be different collections of similar content. Eventually it might need to be paginated
-            so that there are next and previous links at the bottom for getting to newer/older posts. Or it could just
-            be a long, scrollable list of posts that can be filterable by those tags I mentioned.
-          </p>
-          <p>Maybe a sexy little sidebar over there &larr; or over there &rarr;</p>
+        <motion.section aria-labelledby='writing-page-title' variants={secondary}>
+          <h1 id='writing-page-title'>{frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
         <motion.section variants={secondary}>
-          <PostsGrid columns='1fr'>
+          <PostsGrid columns='1fr' rowHeight='200px'>
             {posts.map(post => (
               <PostPreview key={post.slug} post={post} />
             ))}

@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
@@ -38,20 +38,20 @@ const Form = styled(motion.form)`
     border-radius: 0;
   }
 
-  div {
+  label {
     margin: 0 0 2rem;
     width: 100%;
   }
 
-  div:first-of-type {
+  label:first-of-type {
     grid-area: person;
   }
 
-  div:nth-child(2) {
+  label:nth-child(2) {
     grid-area: email;
   }
 
-  div:last-of-type {
+  label:last-of-type {
     grid-area: message;
     width: 100%;
   }
@@ -105,58 +105,55 @@ const ContactPage = () => {
           name='contact'
           method='POST'
           data-netlify='true'
+          netlify-honeypot='bot-field'
           variants={primary}
           onSubmit={handleSubmit}
         >
           <h1>Send me a Message</h1>
-          <div>
-            <label htmlFor='name'>
-              Name
-              <input
-                id='name'
-                name='name'
-                type='text'
-                value={state.name}
-                onChange={handleInputChange}
-                autoComplete='off'
-                autoCapitalize='words'
-                autoCorrect='off'
-                required
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor='email'>
-              Email
-              <input
-                id='email'
-                name='email'
-                type='email'
-                value={state.email}
-                onChange={handleInputChange}
-                autoComplete='off'
-                autoCapitalize='none'
-                autoCorrect='off'
-                required
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor='message'>
-              Message
-              <textarea
-                id='message'
-                name='message'
-                type='text'
-                value={state.message}
-                onChange={handleInputChange}
-                autoComplete='off'
-                autoCapitalize='on'
-                autoCorrect='off'
-                required
-              />
-            </label>
-          </div>
+          <input type='hidden' name='bot-field' onChange={handleInputChange} />
+          <input type='hidden' name='form-name' value='contact' />
+          <label htmlFor='name'>
+            Name
+            <input
+              id='name'
+              name='name'
+              type='text'
+              value={state.name}
+              onChange={handleInputChange}
+              autoComplete='off'
+              autoCapitalize='words'
+              autoCorrect='off'
+              required
+            />
+          </label>
+          <label htmlFor='email'>
+            Email
+            <input
+              id='email'
+              name='email'
+              type='email'
+              value={state.email}
+              onChange={handleInputChange}
+              autoComplete='off'
+              autoCapitalize='none'
+              autoCorrect='off'
+              required
+            />
+          </label>
+          <label htmlFor='message'>
+            Message
+            <textarea
+              id='message'
+              name='message'
+              type='text'
+              value={state.message}
+              onChange={handleInputChange}
+              autoComplete='off'
+              autoCapitalize='on'
+              autoCorrect='off'
+              required
+            />
+          </label>
           <button type='submit'>Send</button>
         </Form>
       </motion.div>

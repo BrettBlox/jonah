@@ -41,4 +41,10 @@ collections:
           - { label: 'Hero Image', name: 'image', widget: 'image' }
           - { label: 'Welcome Title', name: 'title', widget: 'string' }
           - { label: 'Welcome Text', name: 'body', widget: 'markdown' }
-
+      - name: 'writing'
+        label: 'Writing Page'
+        file: 'content/page-content/writing.md'
+        fields:
+          - { label: 'Hero Image', name: 'image', widget: 'image' }
+          - { label: 'Writing Page Title', name: 'title', widget: 'string' }
+          - { label: 'Text Above Posts', name: 'body', widget: 'markdown' }
