@@ -67,9 +67,9 @@ const IndexPage = () => {
         <motion.section aria-labelledby='recent-writing' variants={secondary}>
           <h2 id='recent-writing'>Recent Writing</h2>
           <PostsGrid>
-            {posts.map(post => (
-              <PostPreview direction='column' key={post.slug} post={post} />
-            ))}
+            <PostPreview direction='column' key={posts[0].slug} post={posts[0]} />
+            <PostPreview direction='column' key={posts[1].slug} post={posts[1]} />
+            <PostPreview direction='column' key={posts[2].slug} post={posts[2]} />
           </PostsGrid>
         </motion.section>
         <Insta variants={secondary} />
