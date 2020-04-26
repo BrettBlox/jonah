@@ -3,4 +3,3 @@
 
 [[plugins]]
 package = "netlify-plugin-gatsby-cache"
-package = "netlify-plugin-a11y"
