@@ -1,6 +1,5 @@
 ---
 title: Writing
-hero: /images/white-dandelion.jpg
 image: /images/white-dandelion.jpg
 ---
 Tacos iceland stumptown meggings, chambray master cleanse cold-pressed. Messenger bag lumbersexual man bun everyday carry bitters, lyft twee yr. Neutra craft beer kitsch palo santo. Freegan messenger bag coloring book VHS occupy viral

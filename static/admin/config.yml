@@ -35,7 +35,7 @@ collections:
           - { label: 'Image', name: 'image', widget: 'image' }
           - { label: 'About Page Text', name: 'body', widget: 'markdown' }
       - name: 'welcome'
-        label: 'Welcome Message'
+        label: 'Home Page Welcome Message'
         file: 'content/page-content/index.md'
         fields:
           - { label: 'Hero Image', name: 'image', widget: 'image' }

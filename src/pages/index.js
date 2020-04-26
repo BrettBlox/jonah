@@ -29,7 +29,7 @@ const IndexPage = () => {
           node {
             frontmatter {
               title
-              hero {
+              image {
                 sharp: childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid_withWebp
@@ -51,7 +51,7 @@ const IndexPage = () => {
       <SEO title='Home' lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.section variants={primary}>
-          <HeroImage fluid={frontmatter.hero.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />
+          <HeroImage fluid={frontmatter.image.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />
         </motion.section>
         <motion.section aria-labelledby='welcome-message' variants={secondary}>
           <h1

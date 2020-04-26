@@ -1,6 +1,6 @@
 ---
 title: Welcome to The Humdrum Dandelion
-hero: /images/hero-dandelion.jpg
+image: /images/hero-dandelion.jpg
 ---
 
 Tacos iceland stumptown meggings, chambray master cleanse cold-pressed. Messenger bag lumbersexual man bun everyday
