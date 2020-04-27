@@ -13,6 +13,7 @@ const usePosts = () => {
           }
           frontmatter {
             title
+            description
             author
             date(formatString: "MMMM DD, YYYY")
             image {
@@ -22,6 +23,7 @@ const usePosts = () => {
                 }
               }
             }
+            tags
           }
           excerpt
         }
@@ -31,9 +33,11 @@ const usePosts = () => {
 
   return data.allMarkdownRemark.nodes.map(post => ({
     title: post.frontmatter.title,
+    description: post.frontmatter.description,
     slug: post.fields.slug,
     author: post.frontmatter.author,
     date: post.frontmatter.date,
+    tags: post.frontmatter.tags,
     image: post.frontmatter.image,
     excerpt: post.excerpt,
   }))

@@ -25,8 +25,16 @@ const Article = styled.article`
     transform: translateY(-3px) scale(1.01);
   }
 
-  div {
+  > div {
+    flex: 1;
     padding: 1.15em 1.85em;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    div {
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -54,11 +62,62 @@ const PostPreview = ({ post, direction }) => (
     </Link>
     <div>
       <Link to={post.slug}>
-        <h3>{post.title}</h3>
+        <h3
+          css={`
+            margin-bottom: 0;
+          `}
+        >
+          {post.title}
+        </h3>
       </Link>
-
-      <p>{post.excerpt}</p>
-      <ReadLink to={post.slug}>read more &rarr;</ReadLink>
+      <p
+        css={`
+          font-weight: bold;
+          color: var(--green-400);
+          font-size: 0.875rem;
+        `}
+      >
+        {post.date}
+      </p>
+      <p
+        css={`
+          font-size: 0.875rem;
+        `}
+      >
+        {post.excerpt}
+      </p>
+      <div
+        css={`
+          display: flex;
+          flex-direction: ${direction || 'row'};
+          align-items: ${direction === 'column' ? 'flex-start' : 'center'};
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0;
+        `}
+      >
+        <ReadLink
+          css={`
+            padding: 0.25rem 0;
+          `}
+          to={post.slug}
+        >
+          read more &rarr;
+        </ReadLink>
+        <p
+          css={`
+            font-weight: bold;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--green-400);
+            margin: 0;
+            padding: 0.25rem 0;
+          `}
+        >
+          {post.tags}
+        </p>
+      </div>
     </div>
   </Article>
 )

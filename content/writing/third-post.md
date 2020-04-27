@@ -1,6 +1,6 @@
 ---
 title: Third Post
-description: Tattooed fanny pack vaporware cred vinyl bitters, locavore franzen fashion axe marfa sriracha plaid.
+description: This is a brief description to give people a general idea of what to expect.
 date: 2020-04-08T00:00:00.000Z
 author: Jonah
 tags: ["poetry"]
