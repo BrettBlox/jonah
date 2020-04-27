@@ -18,8 +18,10 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Post Body', name: 'body', widget: 'markdown' }
   - name: 'page-content'

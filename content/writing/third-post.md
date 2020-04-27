@@ -1,7 +1,9 @@
 ---
 title: Third Post
+description: Tattooed fanny pack vaporware cred vinyl bitters, locavore franzen fashion axe marfa sriracha plaid.
 date: 2020-04-08T00:00:00.000Z
 author: Jonah
+tags: ["poetry"]
 image: /images/hero-dandelion.jpg
 ---
 

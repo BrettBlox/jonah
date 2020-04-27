@@ -1,7 +1,9 @@
 ---
 title: Second Post
+description: Tattooed fanny pack vaporware cred vinyl bitters, locavore franzen fashion axe marfa sriracha plaid.
 date: 2020-03-08T00:00:00.000Z
 author: Jonah
+tags: ["motherhood, relationships"]
 image: /images/second.jpg
 ---
 

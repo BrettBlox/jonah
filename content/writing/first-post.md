@@ -1,7 +1,9 @@
 ---
 title: First Post
+description: Tattooed fanny pack vaporware cred vinyl bitters, locavore franzen fashion axe marfa sriracha plaid.
 date: 2020-03-07T00:00:00.000Z
 author: Jonah
+tags: ["child psychology, motherhood"]
 image: /images/first.jpg
 ---
 
