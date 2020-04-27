@@ -89,7 +89,7 @@ const PostPreview = ({ post, direction }) => (
       >
         <ReadLink
           css={`
-            display: block;
+            width: ${direction === 'column' && '100%'};
           `}
           to={post.slug}
         >
