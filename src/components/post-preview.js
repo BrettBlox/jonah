@@ -87,7 +87,14 @@ const PostPreview = ({ post, direction }) => (
           padding: 0;
         `}
       >
-        <ReadLink to={post.slug}>read more &rarr;</ReadLink>
+        <ReadLink
+          css={`
+            display: block;
+          `}
+          to={post.slug}
+        >
+          read more &rarr;
+        </ReadLink>
         <div
           css={`
             margin: 0;
