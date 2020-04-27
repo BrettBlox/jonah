@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 import ReadLink from './read-link'
+import Tags from './tags'
 
 const Article = styled.article`
   display: flex;
@@ -32,6 +33,16 @@ const Article = styled.article`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    > div {
+      display: flex;
+      flex-direction: ${props => props.direction || 'row'};
+      align-items: ${props => (props.direction === 'column' ? 'flex-start' : 'center')};
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+    }
 
     > p:first-of-type {
       font-weight: bold;
@@ -76,57 +87,19 @@ const PostPreview = ({ post, direction }) => (
       </Link>
       <p>{post.date}</p>
       <p>{post.excerpt}</p>
-      <div
-        css={`
-          display: flex;
-          flex-direction: ${direction || 'row'};
-          align-items: ${direction === 'column' ? 'flex-start' : 'center'};
-          flex-wrap: wrap;
-          justify-content: space-between;
-          width: 100%;
-          padding: 0;
-        `}
-      >
+      <div>
         <ReadLink
           css={`
             width: ${direction === 'column' && '100%'};
+            @media screen and (max-width: 767px) {
+              width: 100%;
+            }
           `}
           to={post.slug}
         >
           read more &rarr;
         </ReadLink>
-        <div
-          css={`
-            margin: 0;
-            padding: 0.25rem 0;
-          `}
-        >
-          {post.tags
-            .join('')
-            .split(', ')
-            .map(tag => (
-              <ReadLink
-                to={tag}
-                css={`
-                  font-size: 0.75rem;
-                  font-weight: bold;
-                  color: var(--green-500);
-                  margin-right: 8px;
-                  ::after {
-                    content: ', ';
-                  }
-                  &:last-child {
-                    margin-right: 0;
-                    ::after {
-                      content: '';
-                    }
-                  }
-                `}
-              >
-                {tag}
-              </ReadLink>
-            ))}
-        </div>
+        <Tags tags={post.tags} />
       </div>
     </div>
   </Article>
