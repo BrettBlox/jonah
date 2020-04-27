@@ -58,7 +58,7 @@ const WritingPage = () => {
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
         <motion.section variants={secondary}>
-          <PostsGrid columns='1fr' rowHeight='min-content;'>
+          <PostsGrid columns='1fr'>
             {posts.map(post => (
               <PostPreview key={post.slug} post={post} />
             ))}

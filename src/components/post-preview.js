@@ -33,8 +33,18 @@ const Article = styled.article`
     justify-content: space-between;
     flex-direction: column;
 
-    div {
+    > p:first-of-type {
+      font-weight: bold;
+      color: var(--green-500);
     }
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 0.875rem;
   }
 
   @media screen and (max-width: 767px) {
@@ -62,30 +72,10 @@ const PostPreview = ({ post, direction }) => (
     </Link>
     <div>
       <Link to={post.slug}>
-        <h3
-          css={`
-            margin-bottom: 0;
-          `}
-        >
-          {post.title}
-        </h3>
+        <h3>{post.title}</h3>
       </Link>
-      <p
-        css={`
-          font-weight: bold;
-          color: var(--green-400);
-          font-size: 0.875rem;
-        `}
-      >
-        {post.date}
-      </p>
-      <p
-        css={`
-          font-size: 0.875rem;
-        `}
-      >
-        {post.excerpt}
-      </p>
+      <p>{post.date}</p>
+      <p>{post.excerpt}</p>
       <div
         css={`
           display: flex;
@@ -97,26 +87,39 @@ const PostPreview = ({ post, direction }) => (
           padding: 0;
         `}
       >
-        <ReadLink
+        <ReadLink to={post.slug}>read more &rarr;</ReadLink>
+        <div
           css={`
-            padding: 0.25rem 0;
-          `}
-          to={post.slug}
-        >
-          read more &rarr;
-        </ReadLink>
-        <p
-          css={`
-            font-weight: bold;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            color: var(--green-400);
             margin: 0;
             padding: 0.25rem 0;
           `}
         >
-          {post.tags}
-        </p>
+          {post.tags
+            .join('')
+            .split(', ')
+            .map(tag => (
+              <ReadLink
+                to={tag}
+                css={`
+                  font-size: 0.75rem;
+                  font-weight: bold;
+                  color: var(--green-500);
+                  margin-right: 8px;
+                  ::after {
+                    content: ', ';
+                  }
+                  &:last-child {
+                    margin-right: 0;
+                    ::after {
+                      content: '';
+                    }
+                  }
+                `}
+              >
+                {tag}
+              </ReadLink>
+            ))}
+        </div>
       </div>
     </div>
   </Article>

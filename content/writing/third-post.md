@@ -1,9 +1,8 @@
 ---
 title: Third Post
-description: This is a brief description to give people a general idea of what to expect.
 date: 2020-04-08T00:00:00.000Z
 author: Jonah
-tags: ["poetry"]
+tags: ['poetry']
 image: /images/hero-dandelion.jpg
 ---
 

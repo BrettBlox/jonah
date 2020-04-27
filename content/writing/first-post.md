@@ -1,6 +1,5 @@
 ---
 title: First Post
-description: This is a brief description to give people a general idea of what to expect.
 date: 2020-03-07T00:00:00.000Z
 author: Jonah
 tags: ["child psychology, motherhood"]
