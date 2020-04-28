@@ -27,6 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               title
+              tags
             }
             fields {
               slug
@@ -34,19 +35,36 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
   `)
+
   const posts = result.data.allMarkdownRemark.edges
   posts.forEach(({ node }, index) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/components/templates/post.js`),
+      component: path.resolve(`./src/components/templates/post-template.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
         slug: node.fields.slug,
         prev: index === 0 ? null : posts[index - 1].node,
         next: index === posts.length - 1 ? null : posts[index + 1].node,
+      },
+    })
+  })
+
+  const tags = result.data.tagsGroup.group
+  tags.forEach(tag => {
+    createPage({
+      path: `/writing/${tag.fieldValue}/`,
+      component: path.resolve(`./src/components/templates/tags-template.js`),
+      context: {
+        tag: tag.fieldValue,
       },
     })
   })

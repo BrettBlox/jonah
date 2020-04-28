@@ -48,7 +48,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title='Home' lang='en' />
+      <SEO title='Home' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.section variants={primary}>
           <HeroImage fluid={frontmatter.image.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />

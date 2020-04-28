@@ -2,7 +2,7 @@
 title: Second Post
 date: 2020-03-08T00:00:00.000Z
 author: Jonah
-tags: ["motherhood, relationships"]
+tags: ['motherhood', 'relationships']
 image: /images/second.jpg
 ---
 

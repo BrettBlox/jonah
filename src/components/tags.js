@@ -10,32 +10,29 @@ const Tags = ({ tags }) => (
       padding: 0.25rem 0;
     `}
   >
-    {tags
-      .join('')
-      .split(', ')
-      .map(tag => (
-        <ReadLink
-          key={tag}
-          to={tag}
-          css={`
-            font-size: 0.75rem;
-            font-weight: bold;
-            color: var(--green-500);
-            margin-right: 8px;
+    {tags.map(tag => (
+      <ReadLink
+        key={tag}
+        to={`writing/${tag}`}
+        css={`
+          font-size: 0.75rem;
+          font-weight: bold;
+          color: var(--green-500);
+          margin-right: 8px;
+          ::after {
+            content: ', ';
+          }
+          &:last-child {
+            margin-right: 0;
             ::after {
-              content: ', ';
+              content: '';
             }
-            &:last-child {
-              margin-right: 0;
-              ::after {
-                content: '';
-              }
-            }
-          `}
-        >
-          {tag}
-        </ReadLink>
-      ))}
+          }
+        `}
+      >
+        {tag}
+      </ReadLink>
+    ))}
   </div>
 )
 

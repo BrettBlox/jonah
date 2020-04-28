@@ -48,7 +48,7 @@ const WritingPage = () => {
 
   return (
     <>
-      <SEO title='Writing' lang='en' />
+      <SEO title='Writing' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.section variants={primary}>
           <HeroImage fluid={frontmatter.image.sharp.fluid} alt='White dandelion image' className='full-bleed' />

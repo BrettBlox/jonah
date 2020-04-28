@@ -2,7 +2,7 @@
 title: First Post
 date: 2020-03-07T00:00:00.000Z
 author: Jonah
-tags: ["child psychology, motherhood"]
+tags: ['child psychology', 'motherhood']
 image: /images/first.jpg
 ---
 

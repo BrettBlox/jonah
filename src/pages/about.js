@@ -35,7 +35,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <SEO title='About' lang='en' />
+      <SEO title='About' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.div variants={primary}>
           <Image
