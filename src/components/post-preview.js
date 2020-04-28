@@ -90,7 +90,7 @@ const PostPreview = ({ post, direction }) => (
       <div>
         <ReadLink
           css={`
-            width: ${direction === 'column' && '100%'};
+            width: ${direction === 'column' ? '100%' : 'auto'};
             @media screen and (max-width: 767px) {
               width: 100%;
             }

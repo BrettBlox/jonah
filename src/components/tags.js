@@ -13,7 +13,7 @@ const Tags = ({ tags }) => (
     {tags.map(tag => (
       <ReadLink
         key={tag}
-        to={`writing/${tag}`}
+        to={`/writing/${tag}`}
         css={`
           font-size: 0.75rem;
           font-weight: bold;
