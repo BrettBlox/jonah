@@ -27,6 +27,7 @@ const Form = styled(motion.form)`
   h1 {
     grid-area: heading;
     text-align: center;
+    margin-bottom: 3rem;
   }
 
   input,
@@ -41,6 +42,7 @@ const Form = styled(motion.form)`
   label {
     margin: 0 0 2rem;
     width: 100%;
+    display: block;
   }
 
   label:first-of-type {
@@ -58,8 +60,9 @@ const Form = styled(motion.form)`
 
   button {
     grid-area: button;
-    width: 50%;
-    margin: 0;
+    width: 100%;
+    max-width: 436px;
+    /* margin: 0 auto; */
     padding: 0.5rem;
     background: linear-gradient(180deg, var(--green-400), var(--green-900));
     border: none;
