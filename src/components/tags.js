@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import slugify from 'slugify'
 
 import ReadLink from './read-link'
 
@@ -13,7 +14,7 @@ const Tags = ({ tags }) => (
     {tags.map(tag => (
       <ReadLink
         key={tag}
-        to={`/writing/${tag}`}
+        to={`/writing/${slugify(tag, { replacement: '-', lower: true })}`}
         css={`
           font-size: 0.75rem;
           font-weight: bold;

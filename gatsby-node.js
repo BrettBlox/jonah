@@ -1,6 +1,7 @@
 const { fmImagesToRelative } = require(`gatsby-remark-relative-images`)
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const slugify = require('slugify')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -61,10 +62,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const tags = result.data.tagsGroup.group
   tags.forEach(tag => {
     createPage({
-      path: `/writing/${tag.fieldValue}/`,
+      path: `/writing/${slugify(tag.fieldValue, { replacement: '-', lower: true })}/`,
       component: path.resolve(`./src/components/templates/tags-template.js`),
       context: {
         tag: tag.fieldValue,
+        slugTag: slugify(tag.fieldValue, { replacement: '-', lower: true }),
       },
     })
   })

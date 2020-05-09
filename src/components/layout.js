@@ -8,7 +8,6 @@ import Header from './header'
 import Footer from './footer'
 
 import GlobalStyle from '../styles/global'
-import SEO from './seo'
 
 const Main = styled(motion.main)`
   width: var(--max-width);
