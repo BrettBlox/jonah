@@ -10,7 +10,7 @@ const typography = css`
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
         (100vw - (var(--fluid-type-min-screen) * 1rem)) / (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
     );
-    color: var(--green-800);
+    color: var(--text-secondary);
     line-height: 1.58;
   }
 
@@ -21,7 +21,7 @@ const typography = css`
   h5,
   h6,
   label {
-    color: var(--green-900);
+    color: var(--text-primary);
     text-transform: uppercase;
     font-size: calc(
       (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *

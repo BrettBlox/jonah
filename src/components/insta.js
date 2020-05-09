@@ -43,7 +43,7 @@ const InstaGrid = styled(motion.section)`
   a.instalink {
     display: inline-block;
     text-transform: uppercase;
-    color: var(--green-900);
+    color: var(--text-primary);
     margin-top: 4rem;
     @media screen and (max-width: 500px) {
       margin-top: 3rem;

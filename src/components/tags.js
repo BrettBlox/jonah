@@ -18,7 +18,7 @@ const Tags = ({ tags }) => (
         css={`
           font-size: 0.75rem;
           font-weight: bold;
-          color: var(--green-500);
+          color: var(--text-tertiary);
           margin-right: 8px;
           ::after {
             content: ', ';

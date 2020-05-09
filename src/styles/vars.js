@@ -1,5 +1,7 @@
 import { css } from 'styled-components'
 
+import bg from '../../content/images/bg-waves.png'
+
 const vars = css`
   :root {
     /* Colors */
@@ -38,6 +40,32 @@ const vars = css`
     --footer-width: var(--header-width);
     --fluid-type-min-screen: 20;
     --fluid-type-max-screen: 88;
+
+    --body-bg: #ecece4;
+    --header-bg: rgb(247, 247, 247, 0.9);
+    --footer-bg: linear-gradient(0deg, rgba(0, 5, 0, 0.5), rgb(0, 5, 0)),
+      linear-gradient(90deg, var(--green-500), var(--green-800));
+    --card-bg: linear-gradient(180deg, rgba(82, 107, 45, 0.06), rgba(82, 107, 45, 0.06)),
+      linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    --card-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
+      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    --card-shadow-hover: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    --text-primary: var(--green-900);
+    --text-secondary: var(--green-800);
+    --text-tertiary: var(--green-500);
+
+    [data-theme='dark'] {
+      --body-bg: rgb(0, 5, 0);
+      --header-bg: rgba(0, 5, 0, 0.9);
+      --card-bg: var(--green-900);
+      --card-shadow: 0 13px 27px -5px var(--green-800);
+      --card-shadow-hover: 0 30px 60px -12px var(--green-700);
+      --text-primary: var(--beige);
+      --text-secondary: var(--green-100);
+      --text-tertiary: var(--green-400);
+      --beige: #ecece4;
+    }
   }
 `
 

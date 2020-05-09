@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { AnimatePresence, motion } from 'framer-motion'
+
+import { ThemeStateContext } from '../context/theme-context'
 
 import Header from './header'
 import Footer from './footer'
@@ -27,7 +30,7 @@ const Main = styled(motion.main)`
   }
 `
 
-const Body = styled.div`
+const Site = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,6 +39,8 @@ const Body = styled.div`
 `
 
 const Layout = ({ children, location }) => {
+  const theme = useContext(ThemeStateContext)
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -48,8 +53,13 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
+      <Helmet
+        bodyAttributes={{
+          'data-theme': theme,
+        }}
+      />
       <GlobalStyle />
-      <Body>
+      <Site>
         <Header siteTitle={data.site.siteMetadata.title} />
         <AnimatePresence exitBeforeEnter>
           <Main key={location.pathname} initial='exit' animate='enter' exit='exit'>
@@ -57,7 +67,7 @@ const Layout = ({ children, location }) => {
           </Main>
         </AnimatePresence>
         <Footer />
-      </Body>
+      </Site>
     </>
   )
 }

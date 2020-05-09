@@ -5,8 +5,7 @@ import NavLink from './nav-link'
 import Dandelion from './dandelion'
 
 const StyledFooter = styled.footer`
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)),
-    linear-gradient(90deg, var(--green-500), var(--grey-800));
+  background: var(--footer-bg);
   text-align: center;
   width: 100vw;
   padding: 3rem calc((100vw - var(--header-width)) / 2) 1rem;
@@ -18,7 +17,7 @@ const StyledFooter = styled.footer`
 
   hr {
     opacity: 0.3;
-    background-color: var(--white);
+    background-color: var(--beige);
     max-width: 96vw;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +42,7 @@ const StyledFooter = styled.footer`
     }
   }
   .active {
-    color: var(--white);
+    color: var(--beige);
     opacity: 1;
     font-weight: 700;
   }

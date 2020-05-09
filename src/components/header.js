@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import NavLink from './nav-link'
 import Dandelion from './dandelion'
+import ToggleTheme from './toggle-theme'
 
 const StyledHeader = styled.header`
   padding: 1rem calc((100vw - var(--header-width)) / 2) 1rem;
@@ -12,9 +13,9 @@ const StyledHeader = styled.header`
   letter-spacing: 0.08em;
   position: fixed;
   top: 0;
-  background: linear-gradient(180deg, rgba(82, 107, 45, 0.06), rgba(82, 107, 45, 0.06)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  background: var(--header-bg);
   z-index: 10;
+  transition: background 0.3s;
 
   nav {
     display: flex;
@@ -74,6 +75,9 @@ const Header = ({ siteTitle }) => (
           <NavLink to='/about' activeClassName='active'>
             About
           </NavLink>
+        </li>
+        <li>
+          <ToggleTheme />
         </li>
       </ul>
     </nav>
