@@ -4,8 +4,14 @@ date: 2020-05-10T23:00:00.000Z
 author: Jonah
 tags:
   - poetry
-image: /images/henry-be-6mwtdzuofrw-unsplash.jpg
+image: /images/cherry-laithang-nmppz1ja_je-unsplash-1-.jpg
 ---
+<!--StartFragment--> 
+
+It's not often that I find myself reaching for sleep. Most nights I very willingly let it take me. But, on this particular night, I was so consumed by my thoughts. Calignous notions wrapped up in brooding emotions. These words came to me on that night. A night when I couldn't keep the shadows at bay. 
+
+<!--EndFragment-->
+
 <!--StartFragment-->
 
 It’s scary
@@ -51,10 +57,6 @@ The scariest thing
 In this world.
 
 <!--EndFragment-->
-
-
-
-
 
 <!--StartFragment-->
 
