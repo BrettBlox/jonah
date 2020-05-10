@@ -4,8 +4,14 @@ date: 2020-05-10T23:00:00.000Z
 author: Jonah
 tags:
   - poetry
-image: /images/henry-be-6mwtdzuofrw-unsplash.jpg
+image: /images/cherry-laithang-nmppz1ja_je-unsplash-1-.jpg
 ---
+<!--StartFragment--> 
+
+It's not often that I find myself reaching for sleep. Most nights I very willingly let it take me. But, on this particular night, I was so consumed by my thoughts. Calignous notions wrapped up in brooding emotions. These words came to me on that night. A night when I couldn't keep the shadows at bay. 
+
+<!--EndFragment-->
+
 <!--StartFragment-->
 
 It’s scary
@@ -58,6 +64,6 @@ In this world.
 
 <!--StartFragment-->
 
-Photo by [Henry Be](https://unsplash.com/@henry_be?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Cherry Laithang](https://unsplash.com/@laicho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 <!--EndFragment-->
