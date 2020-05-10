@@ -43,8 +43,9 @@ const vars = css`
 
     --body-bg: #ecece4;
     --header-bg: rgb(247, 247, 247, 0.9);
+    --header-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     --footer-bg: linear-gradient(0deg, rgba(0, 5, 0, 0.5), rgb(0, 5, 0)),
-      linear-gradient(90deg, var(--green-500), var(--green-800));
+      linear-gradient(90deg, var(--green-500), var(--grey-800));
     --card-bg: linear-gradient(180deg, rgba(82, 107, 45, 0.06), rgba(82, 107, 45, 0.06)),
       linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
     --card-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
@@ -58,6 +59,7 @@ const vars = css`
     [data-theme='dark'] {
       --body-bg: rgb(0, 5, 0);
       --header-bg: rgba(0, 5, 0, 0.9);
+      --header-shadow: 0 4px 12px 0 var(--green-800);
       --card-bg: var(--green-900);
       --card-shadow: 0 13px 27px -5px var(--green-800);
       --card-shadow-hover: 0 30px 60px -12px var(--green-700);

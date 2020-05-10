@@ -9,7 +9,7 @@ import ToggleTheme from './toggle-theme'
 const StyledHeader = styled.header`
   padding: 1rem calc((100vw - var(--header-width)) / 2) 1rem;
   width: 100%;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--header-shadow);
   letter-spacing: 0.08em;
   position: fixed;
   top: 0;

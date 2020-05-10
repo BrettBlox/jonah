@@ -5,16 +5,14 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 
 import useForm from '../hooks/use-form'
-import { primary, secondary } from '../variants'
+import { primary } from '../variants'
 
 const Form = styled(motion.form)`
   width: 100%;
   padding: 4rem 8rem;
   border-radius: 0.5em;
-  background: linear-gradient(180deg, rgba(82, 107, 45, 0.06), rgba(82, 107, 45, 0.06)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
-    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
 
   display: grid;
   grid-template-areas:
@@ -62,21 +60,18 @@ const Form = styled(motion.form)`
     grid-area: button;
     width: 100%;
     max-width: 436px;
-    /* margin: 0 auto; */
     padding: 0.5rem;
     background: linear-gradient(180deg, var(--green-400), var(--green-900));
     border: none;
     border-radius: 5px;
-    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
-      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    box-shadow: var(--card-shadow);
     color: var(--white);
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease-out;
 
     :hover {
-      box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
-        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+      box-shadow: var(--card-shadow-hover);
       transform: translateY(-3px) scale(1.01);
       background: linear-gradient(180deg, var(--green-400), var(--green-800));
     }
