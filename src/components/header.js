@@ -65,6 +65,9 @@ const StyledHeader = styled.header`
       li:not(:last-child) {
         margin-right: 0.75rem;
       }
+      li:last-child {
+        margin-left: auto;
+      }
     }
   }
 `

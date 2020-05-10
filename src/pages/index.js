@@ -17,6 +17,9 @@ const HeroImage = styled(Image)`
   max-height: 400px;
   margin-bottom: 1.45em;
   margin-top: -2.75rem;
+  @media screen and (max-width: 600px) {
+    margin-top: -4.3rem;
+  }
 `
 
 const IndexPage = () => {

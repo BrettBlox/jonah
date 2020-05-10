@@ -96,6 +96,10 @@ const ContactPage = () => {
         css={`
           margin-top: -2.75rem;
           padding-top: 4em;
+
+          @media screen and (max-width: 600px) {
+            margin-top: -4.3rem;
+          }
         `}
       >
         <Form

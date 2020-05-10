@@ -16,6 +16,7 @@ const ToggleTheme = () => {
           color: currentColor;
           cursor: pointer;
           transition: opacity 0.3s;
+          padding: 0;
 
           &:hover {
             opacity: 0.7;

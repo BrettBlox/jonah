@@ -17,6 +17,10 @@ const PostImage = styled(Image)`
 
 const Post = styled(motion.div)`
   margin-top: -2.75rem;
+
+  @media screen and (max-width: 600px) {
+    margin-top: -4.3rem;
+  }
 `
 
 const NextPrev = styled(motion.div)`
