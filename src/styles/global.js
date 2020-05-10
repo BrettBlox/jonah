@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: var(--body-bg);
-    /* background-color: var(--body-bg); */
     transition: background .3s;
   }
 

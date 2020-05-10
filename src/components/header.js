@@ -51,8 +51,19 @@ const StyledHeader = styled.header`
 
   @media screen and (max-width: 600px) {
     .header-icon {
+      svg {
+        width: 75px;
+        height: 75px;
+      }
       > span {
         display: none;
+      }
+    }
+
+    ul {
+      flex: 1;
+      li:not(:last-child) {
+        margin-right: 0.75rem;
       }
     }
   }
