@@ -1,5 +1,5 @@
 ---
-title: The Selfish Mother
+title: Selfish Mother
 date: 2020-05-11T00:00:00.000Z
 author: Jonah
 tags:
