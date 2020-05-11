@@ -7,7 +7,7 @@ tags:
   - motherhood
   - love
   - trauma
-image: /images/matthew-smith-ryzo4_jpeu-unsplash.jpg
+image: /images/kelly-sikkema-cv-xugaws4m-unsplash.jpg
 ---
 <!--StartFragment-->
 
@@ -25,65 +25,69 @@ image: /images/matthew-smith-ryzo4_jpeu-unsplash.jpg
 
 Selfish Mama
 
-You give 
-
-and give
+You give and give
 
 and give.
 
 Selfish Mama
 
-You show up
-
-first
+You show up first
 
 and 
 
-you sleep
-
-last.
+you sleep last.
 
 Selfish Mama
 
-the lover
+The one who cries
 
-the giver
-
-the healer
-
-the creator.
+behind closed doors.
 
 Selfish Mama
 
-You'll break yourself
+The one who struggling
 
-before
+to make ends meet.
 
-you can 
+Selfish Mama
 
-do it all. 
+The one who leaves
+
+her dreams behind
+
+to raise the future. 
+
+Selfish Mama
+
+The one who births
+
+pain and suffering.
+
+Selfish Mama
+
+The one whose baby
+
+is ripped out of her arms
+
+because 
+
+she made moves
+
+to 
+
+find a better way.
 
 I see you.
 
-I see how hard 
+I see how hard you work.
 
-you work.
+How little you rest.
 
-How little
+How much you worry.
 
- you rest.
+How intensely you love.
 
-How much 
-
-you worry.
-
-How intensely 
-
-you love.
-
-I see 
-
-your pain
+I see your pain
 
 your fears
 
@@ -103,11 +107,21 @@ Selfish Mama
 
 Don't you see?
 
+You are
 
+the lover
 
+the giver
 
+the healer
 
+the creator.
 
+You are needed.
+
+You have to survive.
+
+Be selfish. 
 
 <!--EndFragment-->
 
@@ -123,7 +137,7 @@ Don't you see?
 
 *Selfishness. A word that stabs me so deep. A name I've been called for loving the wrong way. For caring too much. For daring to want something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest.*
 
-*Why does it hurt so much to be called selfish? Why does it feel so wrong to want anything for myself? Why do I feel like asking for a little bit of space is asking for too much? The answers are not coming easily. Nonetheless, the answers are coming.*
+*Why does it hurt so much, to be called selfish? Why does it feel so wrong to want anything for myself? Why do I feel like asking for a little bit of space is asking for too much? The answers are not coming easily. Nonetheless, the answers are coming.*
 
 <!--EndFragment-->
 
@@ -131,6 +145,6 @@ Don't you see?
 
 <!--StartFragment-->
 
-Photo by [Matthew Smith](https://unsplash.com/@whale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/single-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/single-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 <!--EndFragment-->
