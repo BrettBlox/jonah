@@ -4,6 +4,7 @@ date: 2020-03-27T23:00:00.000Z
 author: Jonah
 tags:
   - poetry
+  - trauma
 image: /images/cherry-laithang-nmppz1ja_je-unsplash-1-.jpg
 ---
 <!--StartFragment--> 
