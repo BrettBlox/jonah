@@ -1,6 +1,6 @@
 ---
 title: About the Author
-image: /images/56522035-737c-4333-91c3-d3dba827b23e.jpeg
+image: /images/jo.jpeg
 ---
 Hello! I'm Jonah and I have absolutely no idea what I should or could share about myself! I'm gonna try to spit something out though. 
 
