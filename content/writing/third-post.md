@@ -11,7 +11,7 @@ image: /images/kelly-sikkema-cv-xugaws4m-unsplash.jpg
 
 *Last week, I was asked what I would like to do on my perfect mother's day. If I could do anything, have anything, be with anyone - what would that day look like?* 
 
-*I didn't say I wanted flowers or a card. I didn't ask for breakfast in bed or to sleep in. I wasn't noble enough to request a day spent with my loving family. Although, I would gladly accept any of it with a grateful heart.*
+*I didn't say I wanted flowers or a card. I didn't ask for breakfast in bed or to sleep in. I wasn't noble enough to request a day spent with my loving family. I wasn't bold enough to want be mothered. Although, I would gladly accept any of it with a grateful heart.*
 
 *My answer was quite simple: I would like to sit alone in a quiet, dark and empty room in complete silence. For the entire day. Nothing to do and nothing to say. No obligations. Nothing but myself.*  
 
@@ -41,7 +41,7 @@ behind closed doors.
 
 Selfish Mama
 
-The one who struggling
+The one who struggles
 
 to make ends meet.
 
@@ -61,7 +61,7 @@ pain and suffering.
 
 Selfish Mama
 
-The one whose baby
+The one whose life
 
 is ripped out of her arms
 
@@ -77,17 +77,25 @@ I see you.
 
 I see how hard you work.
 
+How well you nurture.
+
 How little you rest.
 
 How much you worry.
 
 How intensely you love.
 
+How hard you fight.
+
 I see your pain
 
 your fears
 
 your exhaustion.
+
+Your unwavering 
+
+gratitude.
 
 Touched out.
 
@@ -125,7 +133,7 @@ Be selfish.
 
 <!--StartFragment-->
 
-*I would like the impossible. Impossible even in a time when isolation is so readily available.* 
+*For mother's day, I wanted the impossible. Impossible even in a time when isolation is so readily available.* 
 
 *I found it telling, the thoughts that came flooding into my mind and the sensations I experienced in my body, when those very words came hurling out of my mouth. My palms began to sweat. My shoulders tensed. Immediate guilt. Instantly surveying my surroundings for the next thing to check off my revolving to-do list. For the next thing to add. I am ashamed of feeling that way. Humiliated for craving a few, long moments of loneliness. For silence. For solitude.* 
 
