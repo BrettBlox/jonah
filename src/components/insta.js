@@ -58,7 +58,7 @@ const Insta = ({ variants }) => {
       <div>
         {instaPhotos.map(photo => (
           <a key={photo.id} href={`https://instagram.com/p/${photo.id}`}>
-            <Image alt={photo.caption} fluid={photo.fluid} />
+            <Image alt='Humdrum Dandelion Instagram Image' fluid={photo.fluid} />
           </a>
         ))}
       </div>
