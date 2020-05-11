@@ -22,7 +22,11 @@ I feel so selfish for wanting that. Yeah, I do. For so many reasons. I feel self
 
 Why does it hurt so much to be called selfish? Why does it feel so wrong to want anything for myself? Why do I feel like asking for a little bit of space is asking for too much? The answers are not coming easily. Nonetheless, the answers are coming.
 
-Selfishness. A word that stabs me so deep. A name I've been called for loving the wrong way. For caring too much. For daring to want something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest. 
+Selfishness. A word that stabs me so deep. A name I've been called for loving the wrong way. For caring too much. For daring to want something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest.
+
+
+
+
 
 <!--StartFragment-->
 
