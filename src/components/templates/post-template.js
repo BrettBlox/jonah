@@ -43,6 +43,13 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           <p>Written by {post.frontmatter.author}</p>
           <p>{post.frontmatter.date}</p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            css={`
+              font-size: 12px;
+              color: var(--beige);
+            `}
+            dangerouslySetInnerHTML={{ __html: post.frontmatter.credit }}
+          />
         </motion.div>
         <NextPrev variants={secondary}>
           {prev && <ReadLink to={prev.fields.slug}>&larr; {prev.frontmatter.title}</ReadLink>}
@@ -68,6 +75,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        credit
       }
     }
   }
