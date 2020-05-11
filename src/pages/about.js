@@ -48,7 +48,7 @@ const AboutPage = () => {
             `}
             fluid={frontmatter.image.sharp.fluid}
             imgStyle={{
-              objectPosition: 'top center',
+              objectPosition: '0 -35px',
             }}
           />
         </motion.div>
