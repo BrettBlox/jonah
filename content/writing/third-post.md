@@ -20,11 +20,9 @@ I found it telling, the thoughts that came flooding into my mind and the sensati
 
 I feel so selfish for wanting that. Yeah, I do. For so many reasons. I feel selfish for wanting a day to myself. Selfish for wanting to celebrate my motherhood with the antithesis of mothering - by doing absolutely nothing for anyone. Selfish for wanting to put down my overflowing, seemingly untouched plate. Wrap those leftovers in tinfoil and set it in the fridge for tomorrow. That's what I want though. I want a break. I want to not hear my name called a thousand times an hour. I want to leave the dishes in the sink and the laundry soaking in the tub. I want to leave the toys scattered across the living room floor. That single little plastic building block stranded under the fridge. I want to let the dust settle on my textbooks. Leave the cursor blinking on my unfinished essay. Let my laptop battery run out. I'd like to not have to cook a breakfast that I never eat. Or pour a tea that will sit steeping for hours until its lukewarm and bitter. It's the simple things. It doesn't feel so simple though. 
 
-Selfishness. A word that stabs me so deep. A label I was given so often, as a young girl struggling to find her way in the world and making many mistakes along the way. A name I've been called for loving the wrong way. For caring too much. For wanting something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest. As if caring at all about oneself is taboo. I hear that word and I want to scream. It's frustrating to give all of yourself to please others and to hear that you're doing it all wrong. That all your hard work and attention isn't heard, isn't seen, isn't felt. To feel like asking for a bit of this or a bit of that isn't deserved.   
+Why does it hurt so much to be called selfish? Why does it feel so wrong to want anything for myself? Why do I feel like asking for a little bit of space is asking for too much? The answers are not coming easily. Nonetheless, the answers are coming.
 
-Why does it hurt so much to be called selfish? Why does it feel so wrong to want something for myself? The answers are not coming easily. Nonetheless, I've opened the door and the answers are coming.
-
-
+Selfishness. A word that stabs me so deep. A name I've been called for loving the wrong way. For caring too much. For daring to want something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest. 
 
 <!--StartFragment-->
 
