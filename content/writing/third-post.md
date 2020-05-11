@@ -5,8 +5,6 @@ author: Jonah
 tags:
   - poetry
   - motherhood
-  - love
-  - trauma
 image: /images/kelly-sikkema-cv-xugaws4m-unsplash.jpg
 ---
 <!--StartFragment-->
