@@ -77,17 +77,25 @@ I see you.
 
 I see how hard you work.
 
+How well you nurture.
+
 How little you rest.
 
 How much you worry.
 
 How intensely you love.
 
+How hard you fight.
+
 I see your pain
 
 your fears
 
 your exhaustion.
+
+Your unwavering 
+
+gratitude.
 
 Touched out.
 
