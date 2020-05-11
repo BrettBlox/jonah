@@ -6,6 +6,7 @@ tags:
   - poetry
   - trauma
 image: /images/cherry-laithang-nmppz1ja_je-unsplash-1-.jpg
+credit: Photo by [Cherry Laithang](https://unsplash.com/@laicho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 <!--StartFragment--> 
 
@@ -61,10 +62,3 @@ In this world.
 
 
 
-
-
-<!--StartFragment-->
-
-Photo by [Cherry Laithang](https://unsplash.com/@laicho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-<!--EndFragment-->

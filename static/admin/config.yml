@@ -22,6 +22,7 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
+      - { label: 'Image Credit', name: 'credit', widget: 'string'}
       - { label: 'Post Body', name: 'body', widget: 'markdown' }
   - name: 'page-content'
     label: 'Custom Page Content'
