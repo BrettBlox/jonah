@@ -18,7 +18,7 @@ const AboutPage = () => {
               title
               image {
                 sharp: childImageSharp {
-                  fluid(maxWidth: 400, maxHeight: 400) {
+                  fluid(maxHeight: 700) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -40,12 +40,16 @@ const AboutPage = () => {
         <motion.div variants={primary}>
           <Image
             css={`
+              height: 400px;
               width: 400px;
               max-width: 70vw;
               border-radius: 50%;
               margin: 0 auto;
             `}
             fluid={frontmatter.image.sharp.fluid}
+            imgStyle={{
+              objectPosition: 'top center',
+            }}
           />
         </motion.div>
         <motion.section aria-labelledby={frontmatter.title} variants={secondary}>
