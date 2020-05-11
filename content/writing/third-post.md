@@ -5,8 +5,6 @@ author: Jonah
 tags:
   - poetry
   - motherhood
-  - love
-  - trauma
 image: /images/kelly-sikkema-cv-xugaws4m-unsplash.jpg
 ---
 <!--StartFragment-->
@@ -18,8 +16,6 @@ image: /images/kelly-sikkema-cv-xugaws4m-unsplash.jpg
 *My answer was quite simple: I would like to sit alone in a quiet, dark and empty room in complete silence. For the entire day. Nothing to do and nothing to say. No obligations. Nothing but myself.*  
 
 <!--EndFragment-->
-
-
 
 <!--StartFragment-->
 
@@ -99,6 +95,8 @@ Too needed.
 
 Weary-eyed.
 
+Lonely.
+
 Heavy.
 
 Broken.
@@ -125,8 +123,6 @@ Be selfish.
 
 <!--EndFragment-->
 
-
-
 <!--StartFragment-->
 
 *I would like the impossible. Impossible even in a time when isolation is so readily available.* 
@@ -140,8 +136,6 @@ Be selfish.
 *Why does it hurt so much, to be called selfish? Why does it feel so wrong to want anything for myself? Why do I feel like asking for a little bit of space is asking for too much? The answers are not coming easily. Nonetheless, the answers are coming.*
 
 <!--EndFragment-->
-
-
 
 <!--StartFragment-->
 
