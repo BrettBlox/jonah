@@ -41,7 +41,7 @@ behind closed doors.
 
 Selfish Mama
 
-The one who struggling
+The one who struggles
 
 to make ends meet.
 
@@ -61,7 +61,7 @@ pain and suffering.
 
 Selfish Mama
 
-The one whose baby
+The one whose life
 
 is ripped out of her arms
 
