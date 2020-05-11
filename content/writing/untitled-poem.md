@@ -20,6 +20,10 @@ I turn away from her, hesitating for only a single breathe. My heart beats heavy
 
 <!--StartFragment-->
 
+*I wrote this short piece almost 10 years ago. Back then I would've told you that I was at my rock bottom - the lowest of my lows. I was suffering. Life felt impossible. I wanted to give up, but I also deeply wanted to go on. I knew that I was a survivor but I didn't know if I could survive anymore. The truth was, I couldn't. I couldn't keep living the same way while making the same choices and still survive. This resurfaced as I began to scour my old writing for inspiration for the new stuff. I'm sharing it here now because I still relive this story, from time to time. Every time an old version of me dies its painful death, every time I sever a part of me that needs to be left behind, I feel the same grief. I feel the same sadness and determination, as I walk away. As I step forward.* 
+
+<!--StartFragment-->
+
 Photo by [Marc Kleen](https://unsplash.com/@marckleen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/dark-puddle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 <!--EndFragment-->
