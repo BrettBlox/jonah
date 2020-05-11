@@ -19,7 +19,7 @@ const Main = styled(motion.main)`
   flex-grow: 1;
 
   > * > * + * {
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   @media screen and (max-width: 500px) {
