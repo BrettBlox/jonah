@@ -23,3 +23,11 @@ I feel so selfish for wanting that. Yeah, I do. For so many reasons. I feel self
 Selfishness. A word that stabs me so deep. A label I was given so often, as a young girl struggling to find her way in the world and making many mistakes along the way. A name I've been called for loving the wrong way. For caring too much. For wanting something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest. As if caring at all about oneself is taboo. I hear that word and I want to scream. It's frustrating to give all of yourself to please others and to hear that you're doing it all wrong. That all your hard work and attention isn't heard, isn't seen, isn't felt. To feel like asking for a bit of this or a bit of that isn't deserved.   
 
 Why does it hurt so much to be called selfish? Why does it feel so wrong to want something for myself? The answers are not coming easily. Nonetheless, I've opened the door and the answers are coming.
+
+
+
+<!--StartFragment-->
+
+Photo by [Matthew Smith](https://unsplash.com/@whale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/single-flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+<!--EndFragment-->
