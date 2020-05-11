@@ -2,6 +2,8 @@ const { fmImagesToRelative } = require(`gatsby-remark-relative-images`)
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const slugify = require('slugify')
+const remark = require('remark')
+const remarkHTML = require('remark-html')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -12,6 +14,24 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: `slug`,
       value: slug,
+    })
+  }
+
+  if (node.frontmatter.credit) {
+    const { credit } = node.frontmatter
+    const value = remark()
+      .use(remarkHTML)
+      .processSync(credit)
+      .toString()
+
+    // new node at:
+    // fields {
+    //   credit_html
+    // }
+    createNodeField({
+      name: `credit`,
+      node,
+      value,
     })
   }
 }
@@ -32,6 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             fields {
               slug
+              credit
             }
           }
         }
@@ -50,9 +71,8 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.fields.slug,
       component: path.resolve(`./src/components/templates/post-template.js`),
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
         slug: node.fields.slug,
+        credit: node.fields.credit,
         prev: index === 0 ? null : posts[index - 1].node,
         next: index === posts.length - 1 ? null : posts[index + 1].node,
       },

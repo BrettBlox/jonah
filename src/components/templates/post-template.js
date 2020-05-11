@@ -30,7 +30,7 @@ const NextPrev = styled(motion.div)`
 `
 
 const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
-  const { next, prev } = pageContext
+  const { next, prev, credit } = pageContext
   return (
     <>
       <SEO title={post.frontmatter.title} lang='en' />
@@ -47,8 +47,15 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
             css={`
               font-size: 12px;
               color: var(--beige);
+              p {
+                display: flex;
+                justify-content: flex-end;
+              }
+              a {
+                margin: 0 4px;
+              }
             `}
-            dangerouslySetInnerHTML={{ __html: post.frontmatter.credit }}
+            dangerouslySetInnerHTML={{ __html: credit }}
           />
         </motion.div>
         <NextPrev variants={secondary}>
@@ -75,7 +82,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        credit
       }
     }
   }

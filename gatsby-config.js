@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Humdrum Dandelion`,
-    description: `Creative outlet for Jonah's incredible mind and a canvas for her beautiful words.`,
+    description: `𝙰 𝚌𝚘𝚖𝚖𝚘𝚗 𝚐𝚊𝚛𝚍𝚎𝚗 𝚠𝚎𝚎𝚍’𝚜 𝚖𝚞𝚜𝚒𝚗𝚐𝚜 𝚘𝚗 𝚕𝚒𝚏𝚎, 𝚕𝚘𝚟𝚎, 𝚖𝚘𝚝𝚑𝚎𝚛𝚑𝚘𝚘𝚍, 𝚊𝚗𝚍 𝚝𝚑𝚎 𝚖𝚒𝚗𝚍.`,
     author: `Brett Bloxom`,
   },
   plugins: [
