@@ -10,7 +10,7 @@ image: /images/b512509a-3c42-4ee4-8e8c-50cb052e7108-2040-.jpeg
 ---
 Last week, I was asked what I would like to do on my perfect mother's day. If I could do anything, have anything, be with anyone - what would that day look like? 
 
-My answer was quite simple: I would like to sit in a quite, dark, empty room in complete silence for the entire day. Nothing to do or to say. No obligations. Nothing but myself.  
+My answer was quite simple: I would like to sit alone in a quite, dark and empty room in complete silence for the entire day. Nothing to do or to say. No obligations. Nothing but myself.  
 
 I would like the impossible. Impossible even in a time when isolation is so readily available. 
 
@@ -18,6 +18,8 @@ I found it telling, the thoughts that came flooding into my mind and the sensati
 
 I feel so selfish for wanting that. Yeah. Selfish for wanting a day to myself. Selfish for wanting to celebrate my motherhood with the antithesis of mothering. Selfish for wanting to put down my overflowing, seemingly untouched plate, wrap it in tinfoil, and set it in the fridge for another day. 
 
+That's what I want though. I want a break. I want to not hear my name called 
+
 Selfishness. A word that hits me so deep. A label I was given so often, as a young girl struggling to find her way in the world. A name I've been called for loving the wrong way. For caring the wrong way. For wanting something different than what others want for me. I hear the word and I cringe at its meaning. A word whose intention is to divulge one's lack of consideration, one's self-interest. I hear that word and I want to scream. It's frustrating to give all of yourself to please others, to give them your love, and to hear that you're doing it all wrong. That all your hard work and attention isn't heard, isn't seen, isn't felt. 
 
-Why does it hurt so much to called selfish? Why does it feel so wrong to want something for myself?
+Why does it hurt so much to be called selfish? Why does it feel so wrong to want something for myself? The answer will not come easily
