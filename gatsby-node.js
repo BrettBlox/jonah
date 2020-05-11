@@ -15,24 +15,20 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
-  }
 
-  if (node.frontmatter.credit) {
-    const { credit } = node.frontmatter
-    const value = remark()
-      .use(remarkHTML)
-      .processSync(credit)
-      .toString()
+    if (node.frontmatter.credit) {
+      const { credit } = node.frontmatter
+      const value = remark()
+        .use(remarkHTML)
+        .processSync(credit)
+        .toString()
 
-    // new node at:
-    // fields {
-    //   credit_html
-    // }
-    createNodeField({
-      name: `credit`,
-      node,
-      value,
-    })
+      createNodeField({
+        name: `credit`,
+        node,
+        value,
+      })
+    }
   }
 }
 
