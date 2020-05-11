@@ -3,7 +3,8 @@ title: Reflection
 date: 2010-08-30T07:00:00.000Z
 author: Jonah
 tags:
-  - poetry
+  - short story
+  - healing
 image: /images/marc-kleen-0ynajvfbsf4-unsplash.jpg
 ---
 <!--StartFragment-->
