@@ -24,4 +24,4 @@ Selfishness. A word that stabs me so deep. A label I was given so often, as a yo
 
 Why does it hurt so much to be called selfish? Why does it feel so wrong to want something for myself? The answers are not coming easily. Nonetheless, I've opened the door and the answers are coming.
 
-My mother is the most selfless person that I know. She works tirelessly to care for her family. I know most people say that about their mothers, but this woman, my mama, is always-always working.
+My mother is the most selfless person that I know. She works tirelessly to care for her family. I know most people say that about their mothers, but this woman - my mama - she is never not working. She has her day gig, which is really more of a night gig. She works overtime because she can. And, on her days off, she is fixing, building, cleaning, and
