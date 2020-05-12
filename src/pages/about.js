@@ -40,9 +40,10 @@ const AboutPage = () => {
         <motion.div variants={primary}>
           <Image
             css={`
-              height: 400px;
               width: 400px;
+              height: 400px;
               max-width: 70vw;
+              max-height: 70vw;
               border-radius: 50%;
               margin: 0 auto;
             `}
