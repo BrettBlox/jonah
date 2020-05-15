@@ -15,7 +15,7 @@ credit: >-
 
   <!--EndFragment-->
 ---
-<div align="right">This has all been part of my long, cold, desolate winter.
+This has all been part of my long, cold, desolate winter.
 
 And this,
 
@@ -27,13 +27,17 @@ I let the vernal frost bite.
 
 A renewed courage to endure its lingering sting.
 
+<br/>
+
 It comes easily.
 
 The courage to lean into the cold.
 
 It comes easily.
 
-Because I know what comes next.  
+Because I know what comes next.
+
+<br/>  
 
 My long, cold, desolate winter.
 
@@ -47,6 +51,8 @@ the ache of waking up.
 
 Your end is near.  
 
+<br/>
+
 The axis shifts.
 
 The sun dances lazily through the sky.
@@ -54,6 +60,8 @@ The sun dances lazily through the sky.
 Higher and Higher.
 
 Its warmth sustains, dawdles into the nights.  
+
+<br/>
 
 My Spring is coming.
 
@@ -63,4 +71,4 @@ With new beginnings
 
 and hope.
 
-And you. </div>
+And you.
