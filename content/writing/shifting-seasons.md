@@ -15,13 +15,13 @@ credit: >-
 
   <!--EndFragment-->
 ---
-This has all been part of my long, cold, desolate winter.
+<div align="right">This has all been part of my long, cold, desolate winter.
 
 And this,
 
 this is the part where it teases me.
 
-Longer days and colder nights.
+Longer days and colder nights.  
 
 I let the vernal frost bite.
 
@@ -33,9 +33,7 @@ The courage to lean into the cold.
 
 It comes easily.
 
-Because I know what comes next.
-
-
+Because I know what comes next.  
 
 My long, cold, desolate winter.
 
@@ -47,9 +45,7 @@ my racing thoughts,
 
 the ache of waking up.
 
-Your end is near.
-
-
+Your end is near.  
 
 The axis shifts.
 
@@ -57,18 +53,14 @@ The sun dances lazily through the sky.
 
 Higher and Higher.
 
-Its warmth sustains, dawdles into the nights.
-
-
+Its warmth sustains, dawdles into the nights.  
 
 My Spring is coming.
 
-With its showers
-
-and its flowers
+With its showers and its flowers
 
 With new beginnings
 
 and hope.
 
-And you.
+And you. </div>
