@@ -42,7 +42,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           <h1>{post.frontmatter.title}</h1>
           <p
             css={`
-              color: var(--beige);
+              color: var(--text-primary);
               font-weight: bold;
             `}
           >
@@ -50,7 +50,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           </p>
           <p
             css={`
-              color: var(--beige);
+              color: var(--text-primary);
               font-weight: bold;
             `}
           >
