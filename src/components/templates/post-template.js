@@ -61,7 +61,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           <div
             css={`
               font-size: 12px;
-              color: var(--beige);
+              color: var(--text-primary);
               p {
                 display: flex;
                 justify-content: flex-end;

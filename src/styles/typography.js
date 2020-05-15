@@ -30,6 +30,7 @@ const typography = css`
     letter-spacing: 0.08em;
     font-family: Eczar, IM Fell English, Georgia, serif;
     font-weight: 500;
+    transition: color 0.3s;
   }
 
   h1 {
