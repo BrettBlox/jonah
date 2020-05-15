@@ -40,8 +40,23 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
         </motion.div>
         <motion.div variants={secondary}>
           <h1>{post.frontmatter.title}</h1>
-          <p>Written by {post.frontmatter.author}</p>
-          <p>{post.frontmatter.date}</p>
+          <p
+            css={`
+              color: var(--beige);
+              font-weight: bold;
+            `}
+          >
+            Written by {post.frontmatter.author}
+          </p>
+          <p
+            css={`
+              color: var(--beige);
+              font-weight: bold;
+            `}
+          >
+            {post.frontmatter.date}
+          </p>
+          <br />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <div
             css={`
