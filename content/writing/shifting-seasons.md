@@ -6,14 +6,7 @@ tags:
   - poetry
   - love
 image: /images/alexandru-tudorache-jdjdijzjl94-unsplash.jpg
-credit: >-
-  <!--StartFragment-->
-
-
-  Photo by [Alexandru Tudorache](https://unsplash.com/@andurache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/spring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-
-  <!--EndFragment-->
+credit: Photo by [Alexandru Tudorache](https://unsplash.com/@andurache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/spring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 This has all been part of my long, cold, desolate winter.
 
