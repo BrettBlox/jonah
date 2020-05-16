@@ -6,7 +6,10 @@ tags:
   - poetry
   - love
 image: /images/alexandru-tudorache-jdjdijzjl94-unsplash.jpg
-credit: Photo by [Alexandru Tudorache](https://unsplash.com/@andurache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/spring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+credit: Photo by [Alexandru
+  Tudorache](https://unsplash.com/@andurache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/spring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 This has all been part of my long, cold, desolate winter.
 
@@ -34,7 +37,7 @@ Because I know what comes next.
 
 My long, cold, desolate winter.
 
-When life lays quiet, when stillness devours.
+When life lay quiet, when stillness devours.
 
 My restless limbs,
 
