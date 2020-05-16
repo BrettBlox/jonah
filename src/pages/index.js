@@ -10,6 +10,7 @@ import SEO from '../components/seo'
 import PostPreview from '../components/post-preview'
 import PostsGrid from '../components/posts-grid'
 import Insta from '../components/insta'
+import ReadLink from '../components/read-link'
 
 import usePosts from '../hooks/use-posts'
 
@@ -74,7 +75,17 @@ const IndexPage = () => {
             <PostPreview direction='column' key={posts[1].slug} post={posts[1]} />
             <PostPreview direction='column' key={posts[2].slug} post={posts[2]} />
           </PostsGrid>
+          <ReadLink
+            css={`
+              font-size: 1rem;
+              margin-top: 2rem;
+            `}
+            to='/writing'
+          >
+            All Writing &rarr;
+          </ReadLink>
         </motion.section>
+
         <Insta variants={secondary} />
       </motion.div>
     </>

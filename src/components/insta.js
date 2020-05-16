@@ -42,10 +42,7 @@ const InstaGrid = styled(motion.section)`
     display: inline-block;
     text-transform: uppercase;
     color: var(--text-primary);
-    margin-top: 4rem;
-    @media screen and (max-width: 500px) {
-      margin-top: 3rem;
-    }
+    margin-top: 2rem;
   }
 `
 
