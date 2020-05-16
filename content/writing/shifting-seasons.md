@@ -20,7 +20,7 @@ I let the vernal frost bite.
 
 A renewed courage to endure its lingering sting.
 
-<br/>
+<br>
 
 It comes easily.
 
@@ -30,7 +30,7 @@ It comes easily.
 
 Because I know what comes next.
 
-<br/>  
+<br>  
 
 My long, cold, desolate winter.
 
@@ -44,7 +44,7 @@ the ache of waking up.
 
 Your end is near.  
 
-<br/>
+<br>
 
 The axis shifts.
 
@@ -54,7 +54,7 @@ Higher and Higher.
 
 Its warmth sustains, dawdles into the nights.  
 
-<br/>
+<br>
 
 My Spring is coming.
 
