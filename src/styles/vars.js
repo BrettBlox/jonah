@@ -8,6 +8,7 @@ const vars = css`
     --white: #ffffff;
     --black: #000000;
     --beige: #b5b3b3;
+    --light: #ecece4;
     --yellow: #f0e130;
     --yellow-rgba: rgba(240, 225, 48, 1);
     --green-rgba: rgba(82, 107, 45, 1);
@@ -66,7 +67,7 @@ const vars = css`
       --text-primary: var(--beige);
       --text-secondary: var(--green-100);
       --text-tertiary: var(--green-400);
-      --beige: #ecece4;
+      --beige: var(--light);
     }
   }
 `

@@ -3,13 +3,14 @@ import { graphql, useStaticQuery } from 'gatsby'
 const useInstagram = () => {
   const data = useStaticQuery(graphql`
     query {
-      allInstaNode(limit: 12) {
+      allInstaNode(limit: 12, sort: { fields: timestamp, order: DESC }) {
         nodes {
           id
           username
+          timestamp
           localFile {
             childImageSharp {
-              fluid(maxWidth: 550, maxHeight: 550) {
+              fluid(maxWidth: 400, maxHeight: 400) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

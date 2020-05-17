@@ -51,7 +51,6 @@ const Insta = ({ variants }) => {
   const { username } = instaPhotos[0]
   return (
     <InstaGrid variants={variants} aria-labelledby='instagram-posts'>
-      <h2 id='instagram-posts'>Instagram posts</h2>
       <div>
         {instaPhotos.map(photo => (
           <a key={photo.id} href={`https://instagram.com/p/${photo.id}`}>

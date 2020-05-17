@@ -12,6 +12,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: `https://humdrumdandelion.us18.list-manage.com/subscribe/post?u=234b192e423b934aaba92693f&amp;id=6175c22a91`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
