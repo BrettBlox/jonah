@@ -29,7 +29,7 @@ const Form = styled(motion.form)`
     padding: 0.8rem;
     outline-offset: -1px;
     font-size: 0.875rem;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
   }
 
   input {
