@@ -34,6 +34,7 @@ const Form = styled(motion.form)`
 
   input {
     background: var(--light);
+    border-radius: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     flex: auto;
@@ -105,6 +106,7 @@ const Subscribe = () => {
             name='email'
             type='email'
             value={state.email || ''}
+            onChange={handleInputChange}
             autoCapitalize='none'
             autoCorrect='off'
             required
