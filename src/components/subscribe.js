@@ -68,13 +68,26 @@ const Form = styled(motion.form)`
 `
 
 const Subscribe = () => {
-  const { handleInputChange, state } = useForm()
-  const [mailChimpResult, setMailChimpResult] = useState()
+  const { handleInputChange, state, setState } = useForm()
+  const [buttonText, setButtonText] = useState('Subscribe')
+  const [isSubscribing, setIsSubscribing] = useState(false)
+  const [response, setResponse] = useState({})
+  const [subscribeText, setSubscribeText] = useState('Sign up to receive my latest musings')
 
   const handleSubmit = async e => {
     e.preventDefault()
+    setButtonText('Subscribing...')
+    setState({})
+    setIsSubscribing(true)
     const result = await addToMailchimp(state.email)
-    setMailChimpResult(result)
+    setResponse(result)
+
+    setTimeout(() => {
+      if (result.result === 'success') setSubscribeText('Thank you for subscribing!')
+      if (result.result === 'error') setSubscribeText('Thanks, but it looks like you are already subscribed!')
+      setButtonText('Subscribe')
+      setIsSubscribing(false)
+    }, 1000)
   }
 
   return (
@@ -92,7 +105,7 @@ const Subscribe = () => {
           margin-bottom: 2rem;
         `}
       >
-        Sign up to receive my latest musings
+        {subscribeText}
       </h2>
       <Form name='newsletter' variants={primary} initial='exit' animate='enter' exit='exit' onSubmit={handleSubmit}>
         <label htmlFor='email'>Email Address</label>
@@ -112,7 +125,9 @@ const Subscribe = () => {
             required
             pattern='[^@]+@[^\.]+\..+'
           />
-          <button type='submit'>Subscribe</button>
+          <button disabled={isSubscribing} type='submit'>
+            {buttonText}
+          </button>
         </div>
       </Form>
     </div>
