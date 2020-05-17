@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/label-has-for */
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
@@ -101,11 +103,10 @@ const Subscribe = () => {
             name='email'
             type='email'
             value={state.email || ''}
-            onChange={handleInputChange}
-            autoComplete='off'
             autoCapitalize='none'
             autoCorrect='off'
             required
+            pattern='[^@]+@[^\.]+\..+'
           />
           <button type='submit'>Subscribe</button>
         </div>
