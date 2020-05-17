@@ -7,7 +7,8 @@ import useForm from '../hooks/use-form'
 import { primary } from '../variants'
 
 const Form = styled(motion.form)`
-  padding: 1rem 0;
+  padding: 0;
+  margin: 0;
   width: 100%;
   text-align: left;
 
@@ -76,7 +77,7 @@ const Subscribe = () => {
       css={`
         width: 25rem;
         max-width: 90vw;
-        margin: 2rem auto 5rem !important;
+        margin: 0 auto 3rem !important;
       `}
     >
       <h2

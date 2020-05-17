@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
   background: var(--footer-bg);
   text-align: center;
   width: 100vw;
-  padding: 3rem calc((100vw - var(--header-width)) / 2);
+  padding: 4rem calc((100vw - var(--header-width)) / 2) 1rem;
   color: var(--light);
 
   > * {
