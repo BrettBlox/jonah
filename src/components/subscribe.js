@@ -17,6 +17,19 @@ const Form = styled(motion.form)`
   label {
     color: var(--light);
     font-weight: bold;
+    font-size: 0.875rem;
+  }
+
+  input[type],
+  button {
+    border: none;
+    margin: 0;
+    font: inherit;
+    line-height: 1;
+    padding: 0.8rem;
+    outline-offset: -1px;
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
   }
 
   input {
@@ -34,7 +47,7 @@ const Form = styled(motion.form)`
     box-shadow: var(--card-shadow);
     color: var(--light);
     text-transform: uppercase;
-    font: inherit;
+    font-weight: bold;
     line-height: 1;
     transition: all 0.3s ease-out;
     padding: 0.8rem;
@@ -45,17 +58,6 @@ const Form = styled(motion.form)`
       box-shadow: var(--card-shadow-hover);
       filter: brightness(1.5);
     }
-  }
-
-  input[type],
-  button {
-    border: none;
-    margin: 0;
-    font: inherit;
-    line-height: 1;
-    padding: 0.8rem;
-    outline-offset: -1px;
-    margin-top: 1rem;
   }
 
   *:focus {
@@ -86,10 +88,10 @@ const Subscribe = () => {
         css={`
           color: var(--light);
           text-align: left;
-          padding-bottom: 1rem;
+          margin-bottom: 2rem;
         `}
       >
-        Sign up to be notified of my latest musings
+        Sign up to receive my latest musings
       </h2>
       <Form name='newsletter' variants={primary} initial='exit' animate='enter' exit='exit' onSubmit={handleSubmit}>
         <label htmlFor='email'>Email Address</label>
