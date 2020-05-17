@@ -77,16 +77,17 @@ const Subscribe = () => {
       css={`
         width: 25rem;
         max-width: 90vw;
-        margin: 0 auto 3rem !important;
+        margin: 0 auto 5rem !important;
       `}
     >
       <h2
         css={`
           color: var(--light);
           text-align: left;
+          padding-bottom: 1rem;
         `}
       >
-        Get my latest words in your inbox
+        Sign up to be notified of my latest musings
       </h2>
       <Form name='newsletter' variants={primary} initial='exit' animate='enter' exit='exit' onSubmit={handleSubmit}>
         <label htmlFor='email'>Email Address</label>
