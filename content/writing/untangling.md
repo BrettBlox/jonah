@@ -28,4 +28,4 @@ In a week, I will move into a new house. A house that will no longer be **ours**
 
 So begins the untangling. Or, so it continues.
 
-I hope to continue sharing bits and pieces my journey through this part of my life, because I have seen how divorce is so often portrayed. I have witnessed how divorce is received as a human experience. I have my own experience in receiving it. This isn't my first divorce rodeo. I lived through my own parents' divorce. It's messy and real and tender. It is also healing and transformative and powerful, if you let it.  
+I hope to continue sharing bits and pieces my journey through this part of my life, because I have seen how divorce is so often portrayed. I have witnessed how divorce is received as a human experience. I have my own experience in receiving it. This isn't my first divorce rodeo. I lived through that of my own parents'. It's messy and real and tender. It is also healing and transformative and powerful, if you let it.  
