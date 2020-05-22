@@ -8,7 +8,7 @@ tags:
 image: /images/68664990-ca9d-4537-af17-aa473933e868-2155-.jpeg
 credit: " Photo © The Humdrum Dandelion 2020"
 ---
-Wow. I don't even know how to start this piece. I mean, how do I casually bring up my divorce? Especially when it's something I've been avoiding talking about with most everyone for the past 9 months. Especially because it's painful and it's heartbreaking. Especially because it opens the door for sympathy and attention and judgment - all things I've not yet grown comfortable with receiving. 
+Wow. I don't even know how to start this piece. I mean, how do I casually bring up my divorce? Especially when it's something I've been avoiding talking about with most everyone for the past 9 months. Especially because it's painful and it's heartbreaking. Especially because it opens the door for sympathy and attention and judgment - all things I've not yet grown comfortable with receiving. Especially because talking about our break-up means talking about my grief and my sadness. My shadows. 
 
 Divorce. To "legally dissolve one's marriage with (someone)." Such a sharp word. It's not a word that rolls gently off the tongue and I certainly feel strained typing it. Such a vague definition. Yet, almost mockingly frank. It's as if one day, we just decided to take our marriage and plop it into a cup of water like an Alka Seltzer. Toss it in and watch it fizz away. Sip it all up to numb the hangover away. If only it were that straightforward. If only it were that simple.
 
