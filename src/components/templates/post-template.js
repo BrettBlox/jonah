@@ -44,6 +44,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
             css={`
               color: var(--text-primary);
               font-weight: bold;
+              margin-bottom: 0.25rem;
             `}
           >
             Written by {post.frontmatter.author}
@@ -56,7 +57,6 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           >
             {post.frontmatter.date}
           </p>
-          <br />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <div
             css={`

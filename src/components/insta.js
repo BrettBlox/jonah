@@ -42,7 +42,7 @@ const InstaGrid = styled(motion.section)`
     display: inline-block;
     text-transform: uppercase;
     color: var(--text-primary);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 `
 

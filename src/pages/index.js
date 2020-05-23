@@ -78,7 +78,7 @@ const IndexPage = () => {
           <ReadLink
             css={`
               font-size: 1rem;
-              margin-top: 2rem;
+              margin-top: 1.5rem;
             `}
             to='/writing'
           >
