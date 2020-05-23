@@ -10,8 +10,8 @@ const useInstagram = () => {
           timestamp
           localFile {
             childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400) {
-                ...GatsbyImageSharpFluid_withWebp
+              fluid(maxWidth: 575, maxHeight: 575) {
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }

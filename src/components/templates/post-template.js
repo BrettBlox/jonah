@@ -93,7 +93,7 @@ export const pageQuery = graphql`
         image {
           sharp: childImageSharp {
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }

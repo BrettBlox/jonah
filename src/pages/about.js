@@ -19,7 +19,7 @@ const AboutPage = () => {
               image {
                 sharp: childImageSharp {
                   fluid(maxHeight: 700) {
-                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluid_tracedSVG
                   }
                 }
               }
