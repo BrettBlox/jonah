@@ -18,7 +18,7 @@ const usePosts = () => {
             image {
               sharp: childImageSharp {
                 fluid(maxWidth: 600, maxHeight: 600) {
-                  ...GatsbyImageSharpFluid_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

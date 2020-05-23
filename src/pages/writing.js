@@ -35,7 +35,7 @@ const WritingPage = () => {
               image {
                 sharp: childImageSharp {
                   fluid {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }

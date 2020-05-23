@@ -36,7 +36,7 @@ const IndexPage = () => {
               image {
                 sharp: childImageSharp {
                   fluid {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
