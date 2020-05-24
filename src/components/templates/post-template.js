@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import { motion } from 'framer-motion'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
