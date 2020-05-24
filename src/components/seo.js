@@ -19,11 +19,16 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
+            img
           }
         }
       }
     `
   )
+
+  if (typeof window !== 'undefined') {
+    const { origin } = window.location
+  }
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -49,7 +54,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: image,
+          content: image ? origin + image : origin + site.siteMetadata.img,
         },
         {
           property: `og:type`,

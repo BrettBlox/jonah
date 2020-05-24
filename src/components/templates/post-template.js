@@ -33,7 +33,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
   const { next, prev, credit } = pageContext
   return (
     <>
-      <SEO title={post.frontmatter.title} lang='en' />
+      <SEO title={post.frontmatter.title} image={post.frontmatter.image.sharp.fluid.src} lang='en' />
       <Post initial='exit' animate='enter' exit='exit'>
         <motion.div variants={primary}>
           <PostImage fluid={post.frontmatter.image.sharp.fluid} alt={post.frontmatter.title} className='full-bleed' />
