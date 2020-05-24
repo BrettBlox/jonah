@@ -26,8 +26,15 @@ function SEO({ description, lang, meta, title, image }) {
     `
   )
 
+  let metaImage
+
   if (typeof window !== 'undefined') {
     const { origin } = window.location
+    if (image) {
+      metaImage = origin + image
+    } else {
+      metaImage = origin + site.siteMetadata.img
+    }
   }
 
   const metaDescription = description || site.siteMetadata.description
@@ -54,7 +61,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: image ? origin + image : origin + site.siteMetadata.img,
+          content: metaImage,
         },
         {
           property: `og:type`,
