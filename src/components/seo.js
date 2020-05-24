@@ -11,7 +11,7 @@ import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, title, image }) {
-  const { site } = useStaticQuery(
+  const { site, allMarkdownRemark } = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,21 +19,36 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
-            img
+          }
+        }
+        allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/page-content/index.md" } }) {
+          edges {
+            node {
+              frontmatter {
+                image {
+                  sharp: childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     `
   )
 
+  const { frontmatter } = allMarkdownRemark.edges[0].node
   let metaImage
 
   if (typeof window !== 'undefined') {
     const { origin } = window.location
     if (image) {
-      metaImage = `${origin + image}/`
+      metaImage = `${origin + image}`
     } else {
-      metaImage = `${origin + site.siteMetadata.img}`
+      metaImage = `${origin + frontmatter.image.sharp.fluid.src}`
     }
   }
 
