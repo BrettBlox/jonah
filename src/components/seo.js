@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title, image }) {
     if (image) {
       metaImage = `${origin + image}/`
     } else {
-      metaImage = `${origin + site.siteMetadata.img}/`
+      metaImage = `${origin + site.siteMetadata.img}`
     }
   }
 
