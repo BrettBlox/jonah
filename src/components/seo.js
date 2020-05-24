@@ -31,9 +31,9 @@ function SEO({ description, lang, meta, title, image }) {
   if (typeof window !== 'undefined') {
     const { origin } = window.location
     if (image) {
-      metaImage = origin + image
+      metaImage = `${origin + image}/`
     } else {
-      metaImage = origin + site.siteMetadata.img
+      metaImage = `${origin + site.siteMetadata.img}/`
     }
   }
 
