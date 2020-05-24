@@ -11,17 +11,15 @@ import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, title, image }) {
-  const { site, file } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
-        file(absolutePath: { glob: "**/hero-dandelion.jpg" }) {
-          absolutePath
-        }
         site {
           siteMetadata {
             title
             description
             author
+            img
           }
         }
       }
@@ -35,7 +33,7 @@ function SEO({ description, lang, meta, title, image }) {
     if (image) {
       metaImage = `${origin + image}/`
     } else {
-      metaImage = `${origin}/${file.absolutePath}/`
+      metaImage = `${origin + site.siteMetadata.img}/`
     }
   }
 
