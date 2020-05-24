@@ -19,7 +19,7 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged "${tag}"`
   return (
     <>
-      <SEO title={seoTag} />
+      <SEO title={seoTag} lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.h1 id='tag-header' variants={primary}>
           {tagHeader}

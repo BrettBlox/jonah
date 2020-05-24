@@ -9,7 +9,7 @@ import { primary, secondary } from '../variants'
 
 const Thanks = () => (
   <>
-    <SEO title='Thanks!' />
+    <SEO title='Thanks!' lang='en' />
     <motion.div initial='exit' animate='enter' exit='exit'>
       <motion.section variants={primary}>
         <h1>Thanks for your message!</h1>

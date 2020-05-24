@@ -88,7 +88,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <SEO title='Contact' />
+      <SEO title='Contact' lang='en' />
       <motion.div
         initial='exit'
         animate='enter'

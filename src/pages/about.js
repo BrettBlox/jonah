@@ -35,7 +35,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <SEO title='About' image={frontmatter.image.sharp.fluid.src} />
+      <SEO title='About' image={frontmatter.image.sharp.fluid.src} lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.div variants={primary}>
           <Image
