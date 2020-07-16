@@ -30,11 +30,12 @@ const Form = styled(motion.form)`
 
   input,
   textarea {
-    background-color: transparent;
+    background-color: transparent !important;
     width: 100%;
     border: 0;
     border-bottom: 1px solid var(--beige);
     border-radius: 0;
+    color: var(--white);
   }
 
   label {
