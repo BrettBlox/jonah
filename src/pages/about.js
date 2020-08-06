@@ -53,7 +53,7 @@ const AboutPage = () => {
               margin: 0 auto;
               float: left;
               shape-outside: circle(50%);
-              margin: 1em 1em 1em 0;
+              margin: 1em 2em 1em 0;
             `}
             fluid={frontmatter.image.sharp.fluid}
             imgStyle={{
