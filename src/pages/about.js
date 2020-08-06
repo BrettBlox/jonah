@@ -37,6 +37,7 @@ const AboutPage = () => {
     <>
       <SEO title='About' image={frontmatter.image.sharp.fluid.src} lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
+      <h1 id={frontmatter.title}>{frontmatter.title}</h1>
         <motion.div variants={primary}>
           <Image
             css={`
@@ -46,6 +47,9 @@ const AboutPage = () => {
               max-height: 70vw;
               border-radius: 50%;
               margin: 0 auto;
+              float: left;
+              shape-outside: circle(50%);
+              margin: 1em 1em 1em 0;
             `}
             fluid={frontmatter.image.sharp.fluid}
             imgStyle={{
@@ -54,7 +58,6 @@ const AboutPage = () => {
           />
         </motion.div>
         <motion.section aria-labelledby={frontmatter.title} variants={secondary}>
-          <h1 id={frontmatter.title}>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
         <motion.div variants={secondary}>

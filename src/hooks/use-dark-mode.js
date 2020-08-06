@@ -1,26 +1,26 @@
-import React, { useEffect, useState, createContext } from 'react'
+import React, { useEffect, useState, createContext } from 'react';
 
-export const ThemeStateContext = createContext()
-export const ThemeDispatchContext = createContext()
+export const ThemeStateContext = createContext();
+export const ThemeDispatchContext = createContext();
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('light');
 
   const setMode = mode => {
-    window.localStorage.setItem('theme', mode)
-    setTheme(mode)
-  }
+    window.localStorage.setItem('theme', mode);
+    setTheme(mode);
+  };
 
   const toggleTheme = () => {
     if (theme === 'light') {
-      setMode('dark')
+      setMode('dark');
     } else {
-      setMode('light')
+      setMode('light');
     }
-  }
+  };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem('theme')
+    const localTheme = window.localStorage.getItem('theme');
     /* eslint-disable */
     window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localTheme
       ? setMode('dark')
