@@ -33,10 +33,18 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
   const { next, prev, credit } = pageContext
   return (
     <>
-      <SEO title={post.frontmatter.title} image={post.frontmatter.image.sharp.fluid.src} lang='en' />
+      <SEO
+        title={post.frontmatter.title}
+        image={post.frontmatter.image.sharp.fluid.src}
+        lang='en'
+      />
       <Post initial='exit' animate='enter' exit='exit'>
         <motion.div variants={primary}>
-          <PostImage fluid={post.frontmatter.image.sharp.fluid} alt={post.frontmatter.title} className='full-bleed' />
+          <PostImage
+            fluid={post.frontmatter.image.sharp.fluid}
+            alt={post.frontmatter.title}
+            className='full-bleed'
+          />
         </motion.div>
         <motion.div variants={secondary}>
           <h1>{post.frontmatter.title}</h1>
@@ -57,6 +65,7 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
           >
             {post.frontmatter.date}
           </p>
+          {/* eslint-disable-next-line react/no-danger */}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <div
             css={`
@@ -70,12 +79,21 @@ const PostTemplate = ({ data: { markdownRemark: post }, pageContext }) => {
                 margin: 0 4px;
               }
             `}
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: credit }}
           />
         </motion.div>
         <NextPrev variants={secondary}>
-          {prev && <ReadLink to={prev.fields.slug}>&larr; {prev.frontmatter.title}</ReadLink>}
-          {next && <ReadLink to={next.fields.slug}>{next.frontmatter.title} &rarr; </ReadLink>}
+          {prev && (
+            <ReadLink to={prev.fields.slug}>
+              &larr; {prev.frontmatter.title}
+            </ReadLink>
+          )}
+          {next && (
+            <ReadLink to={next.fields.slug}>
+              {next.frontmatter.title} &rarr;{' '}
+            </ReadLink>
+          )}
         </NextPrev>
       </Post>
     </>
