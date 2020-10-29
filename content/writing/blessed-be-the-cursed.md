@@ -1,7 +1,7 @@
 ---
 title: Blessed Be the Cursed
 date: 2020-10-29T05:11:16.543Z
-author: Jo
+author: Jonah
 tags:
   - poetry
   - trauma
