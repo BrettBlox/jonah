@@ -24,9 +24,11 @@ The silence echoes,
 Bouncing between the four walls of this small room.
 
 Overpowering the raven's gurgling croak. 
-Its black, beady eyes tracing the rill 
+Its black, beady eyes 
+Tracing the rill 
 That bursts from her swollen, bloodshot eyes. 
 Its hex wrapping its wings around her. 
+
 Morphing. Constricting. Consuming. 
 
 The stillness is nudged 
@@ -62,12 +64,13 @@ She will come back to this place.
 Never searching for it, 
 It will stalk her 
 Until she is too tired 
-And too weak 
+And, too weak 
 To outrun it. 
 
 The nothing. 
 The everything. 
-Desolation. 
+Desolation.
+Deluge. 
 Her curse. 
 
 There is one way out and it is through. 
