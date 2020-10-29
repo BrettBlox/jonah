@@ -4,6 +4,7 @@ date: 2020-10-29T05:11:16.543Z
 author: Jo
 tags:
   - poetry
+  - trauma
   - healing
 image: /images/henry-be-6mwtdzuofrw-unsplash-1-.jpg
 credit: <span>Photo by <a
