@@ -23,7 +23,11 @@ The solstice of the shadows.
 
 I have been here before. The end of the world. Time and time again, I have lost my way. Stumbling down this steep terrain. Spiraling into the void unreachable.
 
-If I make it until sunrise, I will return here. I will come back to this place. Never searching for it, it will stalk me until I'm too tired and too weak to outrun it. The nothing. The everything. The deepest depths of anguish.
+If I make it until sunrise, I will return here. I will come back to this place. Never searching for it, it will stalk me until I'm too tired and too weak to outrun it. The nothing. The everything. The deepest depths of desolation. My curse. 
+
+There is one way out and it is through. Through the umbra. Through the anguish. To be devoured and burnt to ash. 
+
+My suffering is my companion. I lay down in her arms. 
 
 
 
