@@ -36,6 +36,7 @@ And, fleeting.
 She implores it to come closer. 
 Or, for the wind to sing her its chilling lullaby. 
 For her pain to find company. 
+
 Anything to save her 
 from being with herself. 
 
