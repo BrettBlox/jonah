@@ -11,23 +11,61 @@ credit: <span>Photo by <a
   Be</a> on <a
   href="https://unsplash.com/s/photos/dark?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
-I live a cursed life. Mirrors shattered into a million jagged shards. Tiny reflections scattered about my cold, mottled feet. The silence echoes across this small room, overpowering the raven's gurgling croak. Her black, beady eyes tracing the rill that bursts from my swollen, bloodshot eyes. Her hex wrapping its wings around me. Morphing. Constricting. Consuming. 
+She lives a cursed life. 
 
-The stillness is nudged by the fisher cat's sorrowful yowl. Distant and fleeting. I beseech it to come closer. Or, for the wind to sing me its chilling lullaby. For my pain to find company. Anything to save me from myself. 
+Mirrors shattered into a million jagged shards. 
+Tiny reflections scattered about her cold, mottled feet. 
+Spilling salt into her palms. 
 
-My skin is crawling, my spirit frigid. 
+The silence echoes across this small room, overpowering the raven's gurgling croak. 
+Its black, beady eyes tracing the rill that bursts from her swollen, bloodshot eyes. 
+Its hex wrapping its wings around her. 
+Morphing. Constricting. Consuming. 
 
-This is the longest night. 
+The stillness is nudged by the fisher cat's sorrowful yowl. 
+Distant and fleeting. 
+She implores it to come closer. 
+Or, for the wind to sing her its chilling lullaby. 
+For her pain to find company. 
+Anything to save her from herself. 
 
-The solstice of the shadows.
+Her skin crawls, her spirit frigid. 
 
-I have been here before. The end of the world. Time and time again, I have lost my way. Stumbling down this steep terrain. Spiraling into the void unreachable.
+This is the longest night. The solstice of the shadows.
 
-If I make it until sunrise, I will return here. I will come back to this place. Never searching for it, it will stalk me until I'm too tired and too weak to outrun it. The nothing. The everything. The deepest depths of desolation. My curse. 
+She has been here before. The end of the world. Time and time again, losing her way. 
+Astray is the way of the seeker. 
+Stumbling down this steep terrain. 
+Spiraling into the void unreachable.
 
-There is one way out and it is through. Through the umbra. Through the anguish. To be devoured and burnt to ash. 
+If she makes it until sunrise, she will return here. 
+She will come back to this place. 
+Never searching for it, it will stalk her until she is too tired and too weak to outrun it. The nothing. 
+The everything. 
+Desolation. 
+Her curse. 
 
-My suffering is my companion. I lay down in her arms. 
+There is one way out and it is through. 
+Through the umbra. 
+Through the anguish. 
+To be devoured, 
+And, burnt to ash. 
+
+Her suffering is her companion. 
+She lay herself down its arms. 
+
+The sobs rock her to sleep. 
+Not sleep, 
+
+Numbness.
+
+Hours, weeks, years later.
+
+The rising sun's rays do their mirthful dance across her cheek.
+Her skin cracks under dried tears.
+Her body aches, as the warmth thaws her brumal sleep.
+
+She lingers. She awakens. She goes on. 
 
 
 
