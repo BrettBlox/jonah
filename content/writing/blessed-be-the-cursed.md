@@ -22,6 +22,7 @@ Spilling salt into her palms.
 
 The silence echoes, 
 Bouncing between the four walls of this small room.
+
 Overpowering the raven's gurgling croak. 
 Its black, beady eyes tracing the rill 
 That bursts from her swollen, bloodshot eyes. 
@@ -31,7 +32,7 @@ Morphing. Constricting. Consuming.
 The stillness is nudged 
 By the fisher cat's sorrowful yowl. 
 Distant 
-And fleeting. 
+And, fleeting. 
 She implores it to come closer. 
 Or, for the wind to sing her its chilling lullaby. 
 For her pain to find company. 
