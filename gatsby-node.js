@@ -18,10 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
     if (node.frontmatter.credit) {
       const { credit } = node.frontmatter
-      const value = remark()
-        .use(remarkHTML)
-        .processSync(credit)
-        .toString()
+      const value = remark().use(remarkHTML).processSync(credit).toString()
 
       createNodeField({
         name: `credit`,
@@ -76,9 +73,12 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   const tags = result.data.tagsGroup.group
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     createPage({
-      path: `/writing/${slugify(tag.fieldValue, { replacement: '-', lower: true })}/`,
+      path: `/writing/${slugify(tag.fieldValue, {
+        replacement: '-',
+        lower: true,
+      })}/`,
       component: path.resolve(`./src/components/templates/tags-template.js`),
       context: {
         tag: tag.fieldValue,

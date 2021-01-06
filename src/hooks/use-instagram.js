@@ -20,7 +20,7 @@ const useInstagram = () => {
     }
   `)
 
-  return data.allInstaNode.nodes.map(node => ({
+  return data.allInstaNode.nodes.map((node) => ({
     ...node.localFile.childImageSharp,
     id: node.id,
     username: node.username,

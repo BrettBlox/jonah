@@ -21,7 +21,11 @@ function SEO({ description, lang, meta, title, image }) {
             author
           }
         }
-        allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/page-content/index.md" } }) {
+        allMarkdownRemark(
+          filter: {
+            fileAbsolutePath: { glob: "**/content/page-content/index.md" }
+          }
+        ) {
           edges {
             node {
               frontmatter {
