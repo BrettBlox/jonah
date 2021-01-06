@@ -27,7 +27,11 @@ const WritingPage = () => {
 
   const data = useStaticQuery(graphql`
     query WritingQuery {
-      allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/page-content/writing.md" } }) {
+      allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { glob: "**/content/page-content/writing.md" }
+        }
+      ) {
         edges {
           node {
             frontmatter {
@@ -51,18 +55,29 @@ const WritingPage = () => {
 
   return (
     <>
-      <SEO title='Writing' image={frontmatter.image.sharp.fluid.src} lang='en' />
+      <SEO
+        title='Writing'
+        image={frontmatter.image.sharp.fluid.src}
+        lang='en'
+      />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.section variants={primary}>
-          <HeroImage fluid={frontmatter.image.sharp.fluid} alt='White dandelion image' className='full-bleed' />
+          <HeroImage
+            fluid={frontmatter.image.sharp.fluid}
+            alt='White dandelion image'
+            className='full-bleed'
+          />
         </motion.section>
-        <motion.section aria-labelledby='writing-page-title' variants={secondary}>
+        <motion.section
+          aria-labelledby='writing-page-title'
+          variants={secondary}
+        >
           <h1 id='writing-page-title'>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </motion.section>
         <motion.section variants={secondary}>
           <PostsGrid columns='1fr'>
-            {posts.map(post => (
+            {posts.map((post) => (
               <PostPreview key={post.slug} post={post} />
             ))}
           </PostsGrid>

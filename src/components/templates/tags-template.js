@@ -16,7 +16,9 @@ const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const seoTag = tag.charAt(0).toUpperCase() + tag.slice(1)
   const { totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged "${tag}"`
+  const tagHeader = `${totalCount} post${
+    totalCount === 1 ? '' : 's'
+  } tagged "${tag}"`
   return (
     <>
       <SEO title={seoTag} lang='en' />
@@ -32,7 +34,12 @@ const Tags = ({ pageContext, data }) => {
           variants={secondary}
         >
           <PostsGrid columns='1fr'>
-            {posts.map(post => post.tags.includes(tag) && <PostPreview key={post.slug} post={post} />)}
+            {posts.map(
+              (post) =>
+                post.tags.includes(tag) && (
+                  <PostPreview key={post.slug} post={post} />
+                )
+            )}
           </PostsGrid>
         </motion.section>
         <motion.div variants={secondary}>

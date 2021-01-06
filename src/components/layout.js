@@ -62,7 +62,12 @@ const Layout = ({ children, location }) => {
       <Site>
         <Header siteTitle={data.site.siteMetadata.title} />
         <AnimatePresence exitBeforeEnter>
-          <Main key={location.pathname} initial='exit' animate='enter' exit='exit'>
+          <Main
+            key={location.pathname}
+            initial='exit'
+            animate='enter'
+            exit='exit'
+          >
             {children}
           </Main>
         </AnimatePresence>

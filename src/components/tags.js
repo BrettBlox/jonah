@@ -11,7 +11,7 @@ const Tags = ({ tags }) => (
       padding: 0.25rem 0;
     `}
   >
-    {tags.map(tag => (
+    {tags.map((tag) => (
       <ReadLink
         key={tag}
         to={`/writing/${slugify(tag, { replacement: '-', lower: true })}`}

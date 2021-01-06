@@ -58,17 +58,32 @@ const Footer = () => (
     </div>
     <ul>
       <li>
-        <NavLink fontWeight='400' color='var(--light)' activeClassName='active' to='/writing'>
+        <NavLink
+          fontWeight='400'
+          color='var(--light)'
+          activeClassName='active'
+          to='/writing'
+        >
           Writing
         </NavLink>
       </li>
       <li>
-        <NavLink fontWeight='400' color='var(--light)' activeClassName='active' to='/about'>
+        <NavLink
+          fontWeight='400'
+          color='var(--light)'
+          activeClassName='active'
+          to='/about'
+        >
           About
         </NavLink>
       </li>
       <li>
-        <NavLink fontWeight='400' color='var(--light)' activeClassName='active' to='/contact'>
+        <NavLink
+          fontWeight='400'
+          color='var(--light)'
+          activeClassName='active'
+          to='/contact'
+        >
           Get in Touch
         </NavLink>
       </li>
@@ -76,7 +91,14 @@ const Footer = () => (
     <hr />
     <div>
       All Materials © The Humdrum Dandelion {new Date().getFullYear()} <br />
-      Built with <Dandelion id='copyright' title='Copyright Dandelion Logo' width='30' height='35' /> by Brett Bloxom
+      Built with{' '}
+      <Dandelion
+        id='copyright'
+        title='Copyright Dandelion Logo'
+        width='30'
+        height='35'
+      />{' '}
+      by Brett Bloxom
     </div>
   </StyledFooter>
 )

@@ -30,7 +30,7 @@ const usePosts = () => {
     }
   `)
 
-  return data.allMarkdownRemark.nodes.map(post => ({
+  return data.allMarkdownRemark.nodes.map((post) => ({
     title: post.frontmatter.title,
     slug: post.fields.slug,
     author: post.frontmatter.author,

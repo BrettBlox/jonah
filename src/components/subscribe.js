@@ -63,7 +63,8 @@ const Form = styled(motion.form)`
 
   *:focus {
     outline: none;
-    box-shadow: 0 13px 27px -5px var(--green-100), 0 8px 16px -8px var(--green-100), 0 -6px 16px -6px var(--green-100);
+    box-shadow: 0 13px 27px -5px var(--green-100),
+      0 8px 16px -8px var(--green-100), 0 -6px 16px -6px var(--green-100);
   }
 `
 
@@ -72,9 +73,11 @@ const Subscribe = () => {
   const [buttonText, setButtonText] = useState('Subscribe')
   const [isSubscribing, setIsSubscribing] = useState(false)
   const [response, setResponse] = useState({})
-  const [subscribeText, setSubscribeText] = useState('Sign up to receive my latest musings')
+  const [subscribeText, setSubscribeText] = useState(
+    'Sign up to receive my latest musings'
+  )
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setButtonText('Subscribing...')
     setState({})
@@ -83,8 +86,12 @@ const Subscribe = () => {
     setResponse(result)
 
     setTimeout(() => {
-      if (result.result === 'success') setSubscribeText('Thank you for subscribing!')
-      if (result.result === 'error') setSubscribeText('Thanks, but it looks like you are already subscribed!')
+      if (result.result === 'success')
+        setSubscribeText('Thank you for subscribing!')
+      if (result.result === 'error')
+        setSubscribeText(
+          'Thanks, but it looks like you are already subscribed!'
+        )
       setButtonText('Subscribe')
       setIsSubscribing(false)
     }, 1000)
@@ -107,7 +114,14 @@ const Subscribe = () => {
       >
         {subscribeText}
       </h2>
-      <Form name='newsletter' variants={primary} initial='exit' animate='enter' exit='exit' onSubmit={handleSubmit}>
+      <Form
+        name='newsletter'
+        variants={primary}
+        initial='exit'
+        animate='enter'
+        exit='exit'
+        onSubmit={handleSubmit}
+      >
         <label htmlFor='email'>Email Address</label>
         <div
           css={`

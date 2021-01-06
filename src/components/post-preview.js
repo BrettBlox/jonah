@@ -9,7 +9,7 @@ import Tags from './tags'
 
 const Article = styled.article`
   display: flex;
-  flex-direction: ${props => props.direction && props.direction};
+  flex-direction: ${(props) => props.direction && props.direction};
   border-radius: 0.5em;
   box-shadow: var(--card-shadow);
   background: var(--card-bg);
@@ -33,8 +33,9 @@ const Article = styled.article`
 
     > div {
       display: flex;
-      flex-direction: ${props => props.direction || 'row'};
-      align-items: ${props => (props.direction === 'column' ? 'flex-start' : 'center')};
+      flex-direction: ${(props) => props.direction || 'row'};
+      align-items: ${(props) =>
+        props.direction === 'column' ? 'flex-start' : 'center'};
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;

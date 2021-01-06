@@ -28,7 +28,11 @@ const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
     query IndexQuery {
-      allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/content/page-content/index.md" } }) {
+      allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { glob: "**/content/page-content/index.md" }
+        }
+      ) {
         edges {
           node {
             frontmatter {
@@ -55,7 +59,11 @@ const IndexPage = () => {
       <SEO title='Home' image={frontmatter.image.sharp.fluid.src} lang='en' />
       <motion.div initial='exit' animate='enter' exit='exit'>
         <motion.section variants={primary}>
-          <HeroImage fluid={frontmatter.image.sharp.fluid} alt='Geometric dandelion image' className='full-bleed' />
+          <HeroImage
+            fluid={frontmatter.image.sharp.fluid}
+            alt='Geometric dandelion image'
+            className='full-bleed'
+          />
         </motion.section>
         <motion.section aria-labelledby='welcome-message' variants={secondary}>
           <h1
@@ -71,9 +79,21 @@ const IndexPage = () => {
         <motion.section aria-labelledby='recent-writing' variants={secondary}>
           <h2 id='recent-writing'>Recent Writing</h2>
           <PostsGrid>
-            <PostPreview direction='column' key={posts[0].slug} post={posts[0]} />
-            <PostPreview direction='column' key={posts[1].slug} post={posts[1]} />
-            <PostPreview direction='column' key={posts[2].slug} post={posts[2]} />
+            <PostPreview
+              direction='column'
+              key={posts[0].slug}
+              post={posts[0]}
+            />
+            <PostPreview
+              direction='column'
+              key={posts[1].slug}
+              post={posts[1]}
+            />
+            <PostPreview
+              direction='column'
+              key={posts[2].slug}
+              post={posts[2]}
+            />
           </PostsGrid>
           <ReadLink
             css={`

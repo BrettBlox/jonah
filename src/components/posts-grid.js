@@ -5,7 +5,8 @@ const PostsGrid = ({ children, columns, rowHeight }) => (
   <div
     css={`
       display: grid;
-      grid-template-columns: ${columns || 'repeat(auto-fit, minmax(300px, 1fr))'};
+      grid-template-columns: ${columns ||
+      'repeat(auto-fit, minmax(300px, 1fr))'};
       grid-auto-rows: ${rowHeight || 'auto'};
       grid-gap: 2rem;
       padding-top: 1rem;
